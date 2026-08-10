@@ -64,6 +64,6 @@ export const SITE = {
   },
 
   // ===== 分析工具 =====
-  gaId: import.meta.env.PUBLIC_GA_ID ?? '',
+  gaId: import.meta.env.PUBLIC_GA_ID ?? 'G-FNSVMSHJRQ',
   clarityId: import.meta.env.PUBLIC_CLARITY_ID ?? '',
 } as const;
