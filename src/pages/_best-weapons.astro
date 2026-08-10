@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TierList from '../components/TierList.astro';
+import { SITE } from '../config/site';
+import data from '../data/weapons-tier-list.json';
+
+const title = `${SITE.gameName} Best Weapons Tier List`;
+---
+
+<BaseLayout
+  title={title}
+  description={`The best ${SITE.gameName} weapons ranked S/A/B by class, with drop locations and how to get each one.`}
+  path="/best-weapons/"
+>
+  <h1>{title}</h1>
+  <TierList {...data} />
+  <p>
+    Not sure which class to build around? Check the <a href="/tier-list/">class tier list</a> first.
+  </p>
+</BaseLayout>

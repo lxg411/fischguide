@@ -1,0 +1,1632 @@
+{
+ "updated": "2026-08-10",
+ "source": "Extracted and verified from the official Fisch wiki mutation table (325 entries), re-checked against the THE DEEP update.",
+ "intro": "Every mutation in Fisch multiplies a fish's base sell value. One mutation per fish; higher multipliers take priority. Attributes (Shiny, Sparkling, Big...) stack on top of mutations, which is why appraising can raise value substantially.",
+ "mutations": [
+  {
+   "name": "Aether",
+   "type": "Mutations",
+   "multiplier": 12.0
+  },
+  {
+   "name": "Fury",
+   "type": "Limited Mutations",
+   "multiplier": 11.7
+  },
+  {
+   "name": "Hades' Curse",
+   "type": "Mutations",
+   "multiplier": 11.1
+  },
+  {
+   "name": "Golden Part",
+   "type": "Limited Mutations",
+   "multiplier": 11.0
+  },
+  {
+   "name": "Rhythmic",
+   "type": "Limited Mutations",
+   "multiplier": 11.0
+  },
+  {
+   "name": "Energy",
+   "type": "Limited Mutations",
+   "multiplier": 10.85
+  },
+  {
+   "name": "Departed",
+   "type": "Limited Mutations",
+   "multiplier": 10.5
+  },
+  {
+   "name": "Ocean's Ruin",
+   "type": "Mutations",
+   "multiplier": 10.2
+  },
+  {
+   "name": "Olympian",
+   "type": "Mutations",
+   "multiplier": 10.0
+  },
+  {
+   "name": "Photical",
+   "type": "Mutations",
+   "multiplier": 10.0
+  },
+  {
+   "name": "Plagued",
+   "type": "Mutations",
+   "multiplier": 10.0
+  },
+  {
+   "name": "Super-Tanned",
+   "type": "Event Mutations",
+   "multiplier": 10.0
+  },
+  {
+   "name": "Tryhard",
+   "type": "Mutations",
+   "multiplier": 10.0
+  },
+  {
+   "name": "Ascended",
+   "type": "Mutations",
+   "multiplier": 9.9
+  },
+  {
+   "name": "Gravitas",
+   "type": "Mutations",
+   "multiplier": 9.81
+  },
+  {
+   "name": "Requies",
+   "type": "Mutations",
+   "multiplier": 9.8
+  },
+  {
+   "name": "Astraeus",
+   "type": "Limited Mutations",
+   "multiplier": 9.6
+  },
+  {
+   "name": "Fabulous",
+   "type": "Mutations",
+   "multiplier": 9.6
+  },
+  {
+   "name": "Poseidon's Blessing",
+   "type": "Mutations",
+   "multiplier": 9.55
+  },
+  {
+   "name": "Permafrost",
+   "type": "Event Mutations",
+   "multiplier": 9.5
+  },
+  {
+   "name": "Withered",
+   "type": "Mutations",
+   "multiplier": 9.5
+  },
+  {
+   "name": "Darkness",
+   "type": "Limited Mutations",
+   "multiplier": 9.4
+  },
+  {
+   "name": "Royal",
+   "type": "Mutations",
+   "multiplier": 9.4
+  },
+  {
+   "name": "Zeus's Storm",
+   "type": "Mutations",
+   "multiplier": 9.3
+  },
+  {
+   "name": "Nebula",
+   "type": "Limited Mutations",
+   "multiplier": 9.2
+  },
+  {
+   "name": "Verdant",
+   "type": "Mutations",
+   "multiplier": 9.2
+  },
+  {
+   "name": "Embraced",
+   "type": "Event Mutations",
+   "multiplier": 9.1
+  },
+  {
+   "name": "Contraband",
+   "type": "Limited Mutations",
+   "multiplier": 9.088
+  },
+  {
+   "name": "Frostbitten",
+   "type": "Event Mutations",
+   "multiplier": 9.0
+  },
+  {
+   "name": "Umbra",
+   "type": "Limited Mutations",
+   "multiplier": 9.0
+  },
+  {
+   "name": "Nightmare",
+   "type": "Event Mutations",
+   "multiplier": 8.8
+  },
+  {
+   "name": "Mossy",
+   "type": "Mutations",
+   "multiplier": 8.7
+  },
+  {
+   "name": "Puritas",
+   "type": "Mutations",
+   "multiplier": 8.7
+  },
+  {
+   "name": "Igneous",
+   "type": "Mutations",
+   "multiplier": 8.65
+  },
+  {
+   "name": "Breezed",
+   "type": "Mutations",
+   "multiplier": 8.6
+  },
+  {
+   "name": "Ignited",
+   "type": "Mutations",
+   "multiplier": 8.6
+  },
+  {
+   "name": "Stormy",
+   "type": "Mutations",
+   "multiplier": 8.6
+  },
+  {
+   "name": "Terra",
+   "type": "Mutations",
+   "multiplier": 8.6
+  },
+  {
+   "name": "Cosmos",
+   "type": "Limited Mutations",
+   "multiplier": 8.55
+  },
+  {
+   "name": "Noctic",
+   "type": "Exclusive Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Oblivion",
+   "type": "Event Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Soultorn",
+   "type": "Limited Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Blessed",
+   "type": "Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Distraught",
+   "type": "Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Jack's Curse",
+   "type": "Event Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Santa",
+   "type": "Event Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Serene",
+   "type": "Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Sovereign",
+   "type": "Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Tidal Surge",
+   "type": "Mutations",
+   "multiplier": 8.5
+  },
+  {
+   "name": "Floral",
+   "type": "Mutations",
+   "multiplier": 8.4
+  },
+  {
+   "name": "Obsidian",
+   "type": "Mutations",
+   "multiplier": 8.3
+  },
+  {
+   "name": "Popsicle",
+   "type": "Event Mutations",
+   "multiplier": 8.16
+  },
+  {
+   "name": "Bouka",
+   "type": "Limited Mutations",
+   "multiplier": 8.01
+  },
+  {
+   "name": "Idol",
+   "type": "Limited Mutations",
+   "multiplier": 8.01
+  },
+  {
+   "name": "Supersonic",
+   "type": "Limited Mutations",
+   "multiplier": 8.01
+  },
+  {
+   "name": "Counterfeit",
+   "type": "Limited Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Birthday",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Sour",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Alien",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Atomic",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Chlorowoken",
+   "type": "Admin Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Crimsonwrath",
+   "type": "Limited Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Fragmented",
+   "type": "Admin Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Frostnova",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Galaxy",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Glacial",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Gleebous",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Glowy",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Heartburst",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Jingle Bell",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Lovely",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Madness",
+   "type": "Admin Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Mastered",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Mayhem",
+   "type": "Admin Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Nocturnal",
+   "type": "Limited Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Paradise",
+   "type": "Event Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Radiant",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Spectral",
+   "type": "Admin Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Spicy",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Vitalic",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Surreal",
+   "type": "Mutations",
+   "multiplier": 8.0
+  },
+  {
+   "name": "Tentacle Surge",
+   "type": "Mutations",
+   "multiplier": 7.8
+  },
+  {
+   "name": "Jackpot",
+   "type": "Mutations",
+   "multiplier": 7.77
+  },
+  {
+   "name": "Wicked",
+   "type": "Event Mutations",
+   "multiplier": 7.7
+  },
+  {
+   "name": "Forest Spirit",
+   "type": "Mutations",
+   "multiplier": 7.5
+  },
+  {
+   "name": "Mourned",
+   "type": "Mutations",
+   "multiplier": 7.5
+  },
+  {
+   "name": "Sanctified",
+   "type": "Limited Mutations",
+   "multiplier": 7.5
+  },
+  {
+   "name": "Soultouched",
+   "type": "Mutations",
+   "multiplier": 7.5
+  },
+  {
+   "name": "Liberty",
+   "type": "Event Mutations",
+   "multiplier": 7.42026
+  },
+  {
+   "name": "Necrotic",
+   "type": "Event Mutations",
+   "multiplier": 7.4
+  },
+  {
+   "name": "Patriotic",
+   "type": "Event Mutations",
+   "multiplier": 7.4
+  },
+  {
+   "name": "Acidic",
+   "type": "Limited Mutations",
+   "multiplier": 7.3
+  },
+  {
+   "name": "Magical",
+   "type": "Mutations",
+   "multiplier": 7.2
+  },
+  {
+   "name": "Crystalline",
+   "type": "Mutations",
+   "multiplier": 7.1
+  },
+  {
+   "name": "Bellona's Fury",
+   "type": "Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Bliss",
+   "type": "Limited Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Cragged",
+   "type": "Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Diurnal",
+   "type": "Limited Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Flora",
+   "type": "Limited Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Fluttering",
+   "type": "Limited Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Infernal",
+   "type": "Limited Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Lustrous",
+   "type": "Admin Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Mango",
+   "type": "Admin Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Sacratus",
+   "type": "Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Shrouded",
+   "type": "Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Starshell",
+   "type": "Event Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Sweet",
+   "type": "Event Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Tidal",
+   "type": "Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Tropical",
+   "type": "Event Mutations",
+   "multiplier": 7.0
+  },
+  {
+   "name": "Sunlit",
+   "type": "Mutations",
+   "multiplier": 6.8
+  },
+  {
+   "name": "Tormented",
+   "type": "Admin Mutations",
+   "multiplier": 6.66
+  },
+  {
+   "name": "Banana",
+   "type": "Event Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Lemon",
+   "type": "Event Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Lime",
+   "type": "Event Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Strawberry",
+   "type": "Event Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Aurora",
+   "type": "Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Evil",
+   "type": "Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Flowed",
+   "type": "Limited Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Luminescent",
+   "type": "Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Prismatic",
+   "type": "Limited Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Relic",
+   "type": "Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Tainted",
+   "type": "Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Venomous",
+   "type": "Admin Mutations",
+   "multiplier": 6.5
+  },
+  {
+   "name": "Oscar",
+   "type": "Mutations",
+   "multiplier": 6.4
+  },
+  {
+   "name": "Subspace",
+   "type": "Mutations",
+   "multiplier": 6.4
+  },
+  {
+   "name": "Sunken",
+   "type": "Mutations",
+   "multiplier": 6.3
+  },
+  {
+   "name": "Chaotic",
+   "type": "Mutations",
+   "multiplier": 6.2
+  },
+  {
+   "name": "Summer",
+   "type": "Event Mutations",
+   "multiplier": 6.2
+  },
+  {
+   "name": "Lucky Gold",
+   "type": "Event Mutations",
+   "multiplier": 6.14
+  },
+  {
+   "name": "Beached",
+   "type": "Event Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Chilled",
+   "type": "Admin Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Dune",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Eerie",
+   "type": "Event Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Fallen",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Fortune",
+   "type": "Admin Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Frightful",
+   "type": "Event Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Frostbite",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Gravy",
+   "type": "Event Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Haunted",
+   "type": "Admin Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Heavenly",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Nova",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Nuclear",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Rainbow",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Sand Castled",
+   "type": "Event Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Snowy",
+   "type": "Admin Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Spooky",
+   "type": "Event Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Toxic",
+   "type": "Mutations",
+   "multiplier": 6.0
+  },
+  {
+   "name": "Anomalous",
+   "type": "Mutations",
+   "multiplier": 5.55
+  },
+  {
+   "name": "King's Blessing",
+   "type": "Mutations",
+   "multiplier": 5.5
+  },
+  {
+   "name": "Abyssal",
+   "type": "Mutations",
+   "multiplier": 5.5
+  },
+  {
+   "name": "Mythical",
+   "type": "Mutations",
+   "multiplier": 5.5
+  },
+  {
+   "name": "Prismize",
+   "type": "Mutations",
+   "multiplier": 5.5
+  },
+  {
+   "name": "Wisp",
+   "type": "Admin Mutations",
+   "multiplier": 5.5
+  },
+  {
+   "name": "Solar",
+   "type": "Mutations",
+   "multiplier": 5.3
+  },
+  {
+   "name": "Clockwork",
+   "type": "Limited Mutations",
+   "multiplier": 5.25
+  },
+  {
+   "name": "Glyphed",
+   "type": "Exclusive Mutations",
+   "multiplier": 5.2
+  },
+  {
+   "name": "Spirit",
+   "type": "Mutations",
+   "multiplier": 5.2
+  },
+  {
+   "name": "Colossal Ink",
+   "type": "Exclusive Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Corvid",
+   "type": "Exclusive Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Galactic",
+   "type": "Exclusive Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Nullified",
+   "type": "Exclusive Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Lobster",
+   "type": "Limited Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Ashen Fortune",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Barnacle",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Carrot",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Creamsicle",
+   "type": "Event Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Cursed Touch",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Emberflame",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Gemstone",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Gingerbread",
+   "type": "Event Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Greedy",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Levitas",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Merry",
+   "type": "Event Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Nico's Nyantics",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Olympian Infliction",
+   "type": "Limited Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Paranormal",
+   "type": "Limited Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Peppermint",
+   "type": "Event Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Rainbow Cluster",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Sandstormy",
+   "type": "Admin Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Sanguine",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Siren's Spite",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Terro",
+   "type": "Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Veilfallen",
+   "type": "Limited Mutations",
+   "multiplier": 5.0
+  },
+  {
+   "name": "Blossomed",
+   "type": "Mutations",
+   "multiplier": 4.6
+  },
+  {
+   "name": "Blarney",
+   "type": "Event Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Clover",
+   "type": "Event Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Lost",
+   "type": "Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Rose",
+   "type": "Event Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Blackwater",
+   "type": "Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Bunny",
+   "type": "Event Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Phantom",
+   "type": "Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Wrath",
+   "type": "Mutations",
+   "multiplier": 4.5
+  },
+  {
+   "name": "Harmonized",
+   "type": "Mutations",
+   "multiplier": 4.2
+  },
+  {
+   "name": "Doomsday",
+   "type": "Admin Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Easter",
+   "type": "Event Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Firework",
+   "type": "Event Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Amped",
+   "type": "Event Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Atlantean",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Bloom",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Blue Moon",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Boreal",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Celestial",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Cracked",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Crimson",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Cursed",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Fungal",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Hades' Infliction",
+   "type": "Limited Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Lovestruck",
+   "type": "Event Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Marrow",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Moon-Kissed",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Revitalized",
+   "type": "Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Stardust",
+   "type": "Limited Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Tiki",
+   "type": "Event Mutations",
+   "multiplier": 4.0
+  },
+  {
+   "name": "Zeus's Infliction",
+   "type": "Limited Mutations",
+   "multiplier": 3.8
+  },
+  {
+   "name": "Aureolin",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Beach Ball",
+   "type": "Limited Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Brined",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Crystalized",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Dreaming",
+   "type": "Limited Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Electric Shock",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Lucid",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Poseidon's Infliction",
+   "type": "Limited Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Solarblaze",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Vined",
+   "type": "Mutations",
+   "multiplier": 3.5
+  },
+  {
+   "name": "Fossilized",
+   "type": "Mutations",
+   "multiplier": 3.3
+  },
+  {
+   "name": "Mesmerized",
+   "type": "Limited Mutations",
+   "multiplier": 3.2
+  },
+  {
+   "name": "Minty",
+   "type": "Event Mutations",
+   "multiplier": 3.2
+  },
+  {
+   "name": "Apollo's Infliction",
+   "type": "Limited Mutations",
+   "multiplier": 3.2
+  },
+  {
+   "name": "Awesome",
+   "type": "Event Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Brother",
+   "type": "Limited Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Ghastly",
+   "type": "Event Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Astral",
+   "type": "Limited Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Aurulent",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Bellona's Infliction",
+   "type": "Limited Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Blighted",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Brown Wood",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Ember",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Floatie",
+   "type": "Event Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Green Leaf",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Hexed",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Mother Nature",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Quiet",
+   "type": "Limited Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Scorched",
+   "type": "Mutations",
+   "multiplier": 3.0
+  },
+  {
+   "name": "Sinister",
+   "type": "Event Mutations",
+   "multiplier": 2.9
+  },
+  {
+   "name": "New Years",
+   "type": "Event Mutations",
+   "multiplier": 2.6
+  },
+  {
+   "name": "Honey",
+   "type": "Mutations",
+   "multiplier": 2.6
+  },
+  {
+   "name": "Batty",
+   "type": "Event Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Chocolate",
+   "type": "Event Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Aureate",
+   "type": "Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Botanic",
+   "type": "Admin Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Lunar",
+   "type": "Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Marshmallow",
+   "type": "Event Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Midas",
+   "type": "Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Purified",
+   "type": "Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Skrunkly",
+   "type": "Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Splashed",
+   "type": "Event Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Sludged",
+   "type": "Mutations",
+   "multiplier": 2.5
+  },
+  {
+   "name": "Festive",
+   "type": "Event Mutations",
+   "multiplier": 2.4
+  },
+  {
+   "name": "Sleet",
+   "type": "Mutations",
+   "multiplier": 2.4
+  },
+  {
+   "name": "Oak",
+   "type": "Admin Mutations",
+   "multiplier": 2.3
+  },
+  {
+   "name": "Jolly",
+   "type": "Event Mutations",
+   "multiplier": 2.2
+  },
+  {
+   "name": "Electric",
+   "type": "Mutations",
+   "multiplier": 2.1
+  },
+  {
+   "name": "Beachy",
+   "type": "Event Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Honked",
+   "type": "Limited Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Smurf",
+   "type": "Event Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Aurelian",
+   "type": "Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Bubblegum",
+   "type": "Limited Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Candy",
+   "type": "Event Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Forgotten",
+   "type": "Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Golden",
+   "type": "Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Lightning",
+   "type": "Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Lumpy",
+   "type": "Limited Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Mace",
+   "type": "Admin Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Rockstar",
+   "type": "Limited Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Shady",
+   "type": "Mutations",
+   "multiplier": 2.0
+  },
+  {
+   "name": "Sizes",
+   "type": "Attributes",
+   "multiplier": 1.99
+  },
+  {
+   "name": "Shiny",
+   "type": "Attributes",
+   "multiplier": 1.85
+  },
+  {
+   "name": "Sparkling",
+   "type": "Attributes",
+   "multiplier": 1.85
+  },
+  {
+   "name": "Coral",
+   "type": "Mutations",
+   "multiplier": 1.8
+  },
+  {
+   "name": "Silver",
+   "type": "Mutations",
+   "multiplier": 1.8
+  },
+  {
+   "name": "Studded",
+   "type": "Mutations",
+   "multiplier": 1.8
+  },
+  {
+   "name": "Glossy",
+   "type": "Mutations",
+   "multiplier": 1.6
+  },
+  {
+   "name": "Cement",
+   "type": "Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Albino",
+   "type": "Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Aurous",
+   "type": "Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Darkened",
+   "type": "Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Frozen",
+   "type": "Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Mosaic",
+   "type": "Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Tanned",
+   "type": "Event Mutations",
+   "multiplier": 1.5
+  },
+  {
+   "name": "Negative",
+   "type": "Mutations",
+   "multiplier": 1.3
+  },
+  {
+   "name": "Translucent",
+   "type": "Mutations",
+   "multiplier": 1.3
+  },
+  {
+   "name": "Fixer",
+   "type": "Event Mutations",
+   "multiplier": 1.25
+  },
+  {
+   "name": "Mission Specialist",
+   "type": "Event Mutations",
+   "multiplier": 1.25
+  },
+  {
+   "name": "Paleontologist",
+   "type": "Event Mutations",
+   "multiplier": 1.25
+  },
+  {
+   "name": "Amber",
+   "type": "Mutations",
+   "multiplier": 1.2
+  },
+  {
+   "name": "Sandy",
+   "type": "Mutations",
+   "multiplier": 1.2
+  },
+  {
+   "name": "Lightened",
+   "type": "Admin Mutations",
+   "multiplier": 1.01
+  },
+  {
+   "name": "Fabricated",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Neon",
+   "type": "Exclusive Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Blue",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Female",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Green",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Pink",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Red",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Upside-Down",
+   "type": "Limited Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Yellow",
+   "type": "Admin Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Seasonal",
+   "type": "Mutations",
+   "multiplier": 1.0
+  },
+  {
+   "name": "Poisoned",
+   "type": "Mutations",
+   "multiplier": 0.9
+  },
+  {
+   "name": "Rotting",
+   "type": "Mutations",
+   "multiplier": 0.88
+  },
+  {
+   "name": "Stone",
+   "type": "Mutations",
+   "multiplier": 0.8
+  },
+  {
+   "name": "Rusty",
+   "type": "Mutations",
+   "multiplier": 0.7
+  },
+  {
+   "name": "67",
+   "type": "Admin Mutations",
+   "multiplier": 0.67
+  },
+  {
+   "name": "Rooted",
+   "type": "Admin Mutations",
+   "multiplier": 0.66
+  },
+  {
+   "name": "Soulless",
+   "type": "Admin Mutations",
+   "multiplier": 0.66
+  },
+  {
+   "name": "Charred",
+   "type": "Mutations",
+   "multiplier": 0.5
+  },
+  {
+   "name": "Unlucky",
+   "type": "Mutations",
+   "multiplier": 0.5
+  },
+  {
+   "name": "Putrid",
+   "type": "Mutations",
+   "multiplier": 0.5
+  },
+  {
+   "name": "Decayed",
+   "type": "Mutations",
+   "multiplier": 0.45
+  },
+  {
+   "name": "Noxious",
+   "type": "Mutations",
+   "multiplier": 0.3
+  },
+  {
+   "name": "Dirty",
+   "type": "Mutations",
+   "multiplier": 0.3
+  },
+  {
+   "name": "Husk",
+   "type": "Mutations",
+   "multiplier": 0.14
+  },
+  {
+   "name": "Exploded",
+   "type": "Mutations",
+   "multiplier": 0.1
+  },
+  {
+   "name": "Part",
+   "type": "Limited Mutations",
+   "multiplier": 0.01
+  },
+  {
+   "name": "Unsellable",
+   "type": "Mutations",
+   "multiplier": 0.0
+  },
+  {
+   "name": "Glitched",
+   "type": "Attributes",
+   "multiplier": 0.0
+  }
+ ]
+}

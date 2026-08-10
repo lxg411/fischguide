@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import data from '../data/mutations.json';
+
+const month = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+const title = `Fisch Mutations — All 325 Multipliers Ranked (${month})`;
+
+const groups = [
+  { name: 'Top Multipliers (8× and up)', test: (m: number) => m >= 8 },
+  { name: 'High (4× – 7.99×)', test: (m: number) => m >= 4 && m < 8 },
+  { name: 'Mid (2× – 3.99×)', test: (m: number) => m >= 2 && m < 4 },
+  { name: 'Low (above 1× – 1.99×)', test: (m: number) => m > 1 && m < 2 },
+  { name: 'Neutral & Negative (1× and below)', test: (m: number) => m <= 1 },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Fisch Mutation Multipliers',
+  itemListElement: data.mutations
+    .slice(0, 50)
+    .map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: `${e.name} (${e.multiplier}×)` })),
+};
+---
+
+<BaseLayout
+  title={title}
+  description={`Every Fisch mutation ranked by sell-value multiplier — Aether 12× down to Glitched 0× — with type labels for limited and event-only rolls. Updated for THE DEEP.`}
+  path="/mutations/"
+>
+  <h1>{title}</h1>
+  <p class="meta">Last updated: <strong>{data.updated}</strong> · version: THE DEEP</p>
+  <p>{data.intro}</p>
+  <p class="unit-note">{data.source}</p>
+
+  <div class="card highlight-card">
+    <h2>How fish value stacks</h2>
+    <p>
+      Sell value = base price × mutation multiplier, then attributes (Shiny, Sparkling, Big, Giant…)
+      stack on top — a Glitched Shiny Sparkling Big fish is one legal combination. A fish holds
+      <strong>one mutation at a time</strong> and higher multipliers take priority, which is why
+      appraising toward Aether (12×), Fury (11.7×) or Hades' Curse (11.1×) is the endgame of value
+      hunting. Attributes survive appraisal; mutations reroll.
+    </p>
+  </div>
+
+  {
+    groups.map((g) => {
+      const rows = data.mutations.filter((e) => g.test(e.multiplier));
+      return rows.length > 0 ? (
+        <section class="mut-group">
+          <h2>{g.name} ({rows.length})</h2>
+          <div class="card">
+            <table>
+              <thead>
+                <tr>
+                  <th>Mutation</th>
+                  <th>Multiplier</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((e) => (
+                  <tr>
+                    <td><strong>{e.name}</strong></td>
+                    <td>{e.multiplier}×</td>
+                    <td>{e.type}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ) : null;
+    })
+  }
+
+  <p>
+    Wondering what the fish itself is worth before the multiplier? Check the
+    <a href="/values/">trading value list</a>, and see which rods boost mutation odds on the
+    <a href="/rod-tier-list/">rod tier list</a>.
+  </p>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</BaseLayout>
+
+<style>
+  .meta {
+    color: var(--muted);
+  }
+  .unit-note {
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-left: 3px solid var(--primary);
+    padding-left: 0.75rem;
+  }
+  .mut-group {
+    margin-bottom: 1.75rem;
+  }
+  .highlight-card {
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+</style>

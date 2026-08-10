@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+import data from '../data/values.json';
+
+const month = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+const title = `Fisch Value List — Trading Values (${month})`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Fisch Trading Value List',
+  itemListElement: data.categories
+    .flatMap((c) => c.items)
+    .map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name })),
+};
+---
+
+<BaseLayout
+  title={title}
+  description={`Fisch value list for ${month}: boats, rod skins and limited cosmetics cross-checked weekly against the Proto, TrueVal and Trade Hub systems — with demand ratings and disagreement flags.`}
+  path="/values/"
+>
+  <h1>{title}</h1>
+  <p class="meta">Last updated: <strong>{data.updated}</strong> · version: THE DEEP</p>
+  <p>{data.intro}</p>
+  <p class="unit-note">{data.unitNote}</p>
+
+  {
+    data.categories.map((cat) => (
+      <section class="val-cat">
+        <h2>{cat.name}</h2>
+        <p class="cat-note">{cat.note}</p>
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Value</th>
+                <th>Demand</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cat.items.map((e) => (
+                <tr>
+                  <td>
+                    <strong>{e.name}</strong>
+                  </td>
+                  <td>{e.value}</td>
+                  <td>{e.demand}/10</td>
+                  <td>{e.how}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))
+  }
+
+  <p>
+    Hunting a mutated fish's worth? Multiply its base price by the roll on our
+    <a href="/mutations/">mutation multiplier table</a> (all 325 mutations). New to trading? The
+    <a href="/guides/trading-guide/">Fisch trading guide</a> covers WFL basics, the three value
+    systems and the scam patterns that show up in trade chat.
+  </p>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</BaseLayout>
+
+<style>
+  .meta {
+    color: var(--muted);
+  }
+  .unit-note {
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-left: 3px solid var(--primary);
+    padding-left: 0.75rem;
+  }
+  .val-cat {
+    margin-bottom: 1.75rem;
+  }
+  .cat-note {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+</style>

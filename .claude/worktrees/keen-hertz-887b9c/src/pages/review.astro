@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+import review from '../data/review.json';
+
+const year = new Date().getFullYear();
+const title = `Is ${SITE.gameName} Worth It in ${year}?`;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    itemReviewed: { '@type': 'VideoGame', name: SITE.gameName, gamePlatform: SITE.game.platforms },
+    reviewRating: { '@type': 'Rating', ratingValue: review.score, bestRating: review.outOf },
+    author: { '@type': 'Organization', name: SITE.siteName },
+    datePublished: review.updated,
+    reviewBody: review.verdict,
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={`Our ${SITE.gameName} review: ${review.score}/${review.outOf}. ${review.verdict}`}
+  path="/review/"
+  jsonLd={jsonLd}
+>
+  <h1>{title}</h1>
+
+  <div class="card verdict">
+    <div class="score">{review.score}<span>/{review.outOf}</span></div>
+    <p>{review.verdict}</p>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h2>Pros</h2>
+      <ul>{review.pros.map((p) => <li>✅ {p}</li>)}</ul>
+    </div>
+    <div class="card">
+      <h2>Cons</h2>
+      <ul>{review.cons.map((c) => <li>❌ {c}</li>)}</ul>
+    </div>
+  </div>
+
+  <p>
+    Ready to jump in? Check the <a href="/system-requirements/">system requirements</a> and the
+    current <a href="/player-count/">player count</a> first.
+  </p>
+</BaseLayout>
+
+<style>
+  .verdict {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .score {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--primary-strong);
+  }
+  .score span {
+    font-size: 1.2rem;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  ul {
+    padding-left: 1rem;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 0.4rem;
+  }
+</style>

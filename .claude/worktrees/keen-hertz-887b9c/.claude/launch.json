@@ -1,0 +1,75 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mvs-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/lxg/Desktop/sites/murderersvssheriffs",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4327"
+      ],
+      "port": 4327,
+      "autoPort": false
+    },
+    {
+      "name": "belmonts-curse-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/lxg/Desktop/sites/belmonts-curse",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4326"
+      ],
+      "port": 4326,
+      "autoPort": false
+    },
+    {
+      "name": "tsb-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/lxg/Desktop/sites/thestrongestbattlegroundsguide",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4325"
+      ],
+      "port": 4325,
+      "autoPort": false
+    },
+    {
+      "name": "mm2guide",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "preview",
+        "--prefix",
+        "/Users/lxg/Desktop/sites/mm2guide"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "bedwarsguide-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/lxg/Desktop/sites/bedwarsguide",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4325"
+      ],
+      "port": 4325
+    }
+  ]
+}

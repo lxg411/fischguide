@@ -1,0 +1,47 @@
+---
+/**
+ * FAQ 区块：渲染可折叠问答 + 输出 FAQPage 结构化数据（富摘要 CTR 提升）。
+ */
+interface Faq {
+  q: string;
+  a: string;
+}
+interface Props {
+  faqs: Faq[];
+  heading?: string;
+}
+const { faqs, heading = 'FAQ' } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<section>
+  <h2>{heading}</h2>
+  {
+    faqs.map((f) => (
+      <details class="card">
+        <summary>{f.q}</summary>
+        <p>{f.a}</p>
+      </details>
+    ))
+  }
+</section>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<style>
+  details {
+    margin-bottom: 0.5rem;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+</style>

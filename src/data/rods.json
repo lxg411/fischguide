@@ -1,0 +1,2239 @@
+{
+ "updated": "2026-08-10",
+ "version": "THE DEEP",
+ "source": "Full 248-rod stat table (lure / luck / control / stage / how to get) compiled from the official Fisch wiki and cross-checked in-game listings.",
+ "rods": [
+  {
+   "name": "Abyssal Specter Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 850,000 C$ Level 170",
+   "stage": "6",
+   "lure": "60%",
+   "luck": "90%",
+   "control": "0.3"
+  },
+  {
+   "name": "Acidgrinder",
+   "journal": "Limited",
+   "source": "Axel",
+   "stage": "7",
+   "lure": "83%",
+   "luck": "185%",
+   "control": "-0.02"
+  },
+  {
+   "name": "Adventurer's Rod",
+   "journal": "Limited",
+   "source": "Joining Second Sea",
+   "stage": "1",
+   "lure": "60%",
+   "luck": "50%",
+   "control": "0"
+  },
+  {
+   "name": "Anchor n' Chain",
+   "journal": "Tidefall",
+   "source": "Crafting 5,000 C$ Level 25",
+   "stage": "5",
+   "lure": "-100%",
+   "luck": "50%",
+   "control": "0.5"
+  },
+  {
+   "name": "Antler Rod",
+   "journal": "Limited",
+   "source": "Advent Calendar",
+   "stage": "1",
+   "lure": "25%",
+   "luck": "45%",
+   "control": "0.02"
+  },
+  {
+   "name": "Apollo's Sunshot",
+   "journal": "Apollo's Song of Light",
+   "source": "100% Bestiary 17,500,000 C$ Level 350",
+   "stage": "7",
+   "lure": "80%",
+   "luck": "150%",
+   "control": "0.1"
+  },
+  {
+   "name": "Arctic Rod",
+   "journal": "Northern Summit",
+   "source": "Purchasing 25,000 C$",
+   "stage": "3",
+   "lure": "25%",
+   "luck": "45%",
+   "control": "0.06"
+  },
+  {
+   "name": "Astraeus Serenade",
+   "journal": "Limited",
+   "source": "Astraeus 50,000,000 C$",
+   "stage": "10",
+   "lure": "100%",
+   "luck": "300%",
+   "control": "0.3"
+  },
+  {
+   "name": "Astral Rod",
+   "journal": "Limited",
+   "source": "Code",
+   "stage": "1",
+   "lure": "10%",
+   "luck": "30%",
+   "control": "0.05"
+  },
+  {
+   "name": "Astralhook Rod",
+   "journal": "Limited",
+   "source": "Leveling Up Level 2500",
+   "stage": "9",
+   "lure": "100%",
+   "luck": "200%",
+   "control": "0.2"
+  },
+  {
+   "name": "Auric Rod",
+   "journal": "Ocean",
+   "source": "Sunken Chest",
+   "stage": "6",
+   "lure": "45%",
+   "luck": "45%",
+   "control": "0.05"
+  },
+  {
+   "name": "Aurora Rod",
+   "journal": "Vertigo",
+   "source": "Purchasing 70,000 C$",
+   "stage": "4",
+   "lure": "45%",
+   "luck": "60%",
+   "control": "0.06"
+  },
+  {
+   "name": "Avalanche Rod",
+   "journal": "Frigid Cavern",
+   "source": "Purchasing 35,000 C$",
+   "stage": "3",
+   "lure": "40%",
+   "luck": "68%",
+   "control": "0.15"
+  },
+  {
+   "name": "Axe of Rhoads",
+   "journal": "Removed",
+   "source": "Fayelie Level 1000",
+   "stage": "8",
+   "lure": "70%",
+   "luck": "145%",
+   "control": "0.25"
+  },
+  {
+   "name": "Azure Of Lagoon",
+   "journal": "Lost Jungle",
+   "source": "85% Bestiary 100,000 C$",
+   "stage": "5",
+   "lure": "75%",
+   "luck": "105%",
+   "control": "-0.01"
+  },
+  {
+   "name": "Bat Whisperer Rod",
+   "journal": "Limited",
+   "source": "Purchasing 10,000 Candy",
+   "stage": "6",
+   "lure": "86%",
+   "luck": "96%",
+   "control": "0.15"
+  },
+  {
+   "name": "Beach Ball Rod",
+   "journal": "Limited",
+   "source": "Beach Volleyball Referee",
+   "stage": "3",
+   "lure": "75%",
+   "luck": "110%",
+   "control": "0.05"
+  },
+  {
+   "name": "Bellona's Waraxe",
+   "journal": "Bellona's Frenzy of War",
+   "source": "100% Bestiary 5,000,000 C$ Level 200",
+   "stage": "7",
+   "lure": "65%",
+   "luck": "150%",
+   "control": "0.2"
+  },
+  {
+   "name": "Blade Of Glorp",
+   "journal": "Roslit Bay",
+   "source": "Glorp Level 888",
+   "stage": "8",
+   "lure": "100%",
+   "luck": "288%",
+   "control": "0.05"
+  },
+  {
+   "name": "Blazebringer Rod",
+   "journal": "Roslit Volcano",
+   "source": "80% Bestiary 70,000 C$",
+   "stage": "4",
+   "lure": "80%",
+   "luck": "90%",
+   "control": "0.15"
+  },
+  {
+   "name": "Bloomspire",
+   "journal": "Living Garden",
+   "source": "Purchasing 1,250,000 C$",
+   "stage": "6",
+   "lure": "15%",
+   "luck": "0%",
+   "control": "0"
+  },
+  {
+   "name": "Bloomspire: Blooming Splendor",
+   "journal": "Living Garden",
+   "source": "Living Lotus Level 350",
+   "stage": "6",
+   "lure": "95%",
+   "luck": "200%",
+   "control": "0.2"
+  },
+  {
+   "name": "Bloomspire: Slumbering Elegance",
+   "journal": "Limited",
+   "source": "Dream Orchid",
+   "stage": "6",
+   "lure": "70%",
+   "luck": "175%",
+   "control": "0.1"
+  },
+  {
+   "name": "Bloomspire: Twisted Toxins",
+   "journal": "Living Garden",
+   "source": "Toxic Lotus Level 150",
+   "stage": "6",
+   "lure": "80%",
+   "luck": "125%",
+   "control": "-0.04"
+  },
+  {
+   "name": "Bone Blade",
+   "journal": "Limited",
+   "source": "Black Market 2,500,000 C$",
+   "stage": "6",
+   "lure": "100%",
+   "luck": "0%",
+   "control": "-0.2"
+  },
+  {
+   "name": "Boreal Rod",
+   "journal": "Boreal Pines",
+   "source": "Purchasing 42,000 C$",
+   "stage": "3",
+   "lure": "60%",
+   "luck": "50%",
+   "control": "0.05"
+  },
+  {
+   "name": "Brick Built Rod",
+   "journal": "Limited",
+   "source": "Brickford Masterson",
+   "stage": "1",
+   "lure": "15%",
+   "luck": "80%",
+   "control": "0.1"
+  },
+  {
+   "name": "Brick Rod",
+   "journal": "Regionless",
+   "source": "Purchasable 13,337 C$",
+   "stage": "4",
+   "lure": "0%",
+   "luck": "75%",
+   "control": "0.35"
+  },
+  {
+   "name": "Brine-Infused Rod",
+   "journal": "Brine Pool",
+   "source": "Purchasing 75,000 C$",
+   "stage": "3",
+   "lure": "40%",
+   "luck": "50%",
+   "control": "0"
+  },
+  {
+   "name": "Brother's Rod",
+   "journal": "Limited",
+   "source": "Luka",
+   "stage": "1",
+   "lure": "70%",
+   "luck": "70%",
+   "control": "0.1"
+  },
+  {
+   "name": "Buddy Bond Rod",
+   "journal": "Limited",
+   "source": "Bob",
+   "stage": "1",
+   "lure": "0%",
+   "luck": "5%",
+   "control": "0"
+  },
+  {
+   "name": "Bunnybloom Caster",
+   "journal": "Limited",
+   "source": "Bloom Bunny",
+   "stage": "7",
+   "lure": "90%",
+   "luck": "150%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Candy Cane Rod",
+   "journal": "Limited",
+   "source": "Purchasing 1,500 C$",
+   "stage": "1",
+   "lure": "10%",
+   "luck": "25%",
+   "control": "0.01"
+  },
+  {
+   "name": "Carbon Rod",
+   "journal": "Moosewood",
+   "source": "Purchasing 2,000 C$",
+   "stage": "1",
+   "lure": "15%",
+   "luck": "25%",
+   "control": "0.05"
+  },
+  {
+   "name": "Carrot Rod",
+   "journal": "Carrot Garden",
+   "source": "100% Bestiary 75,000 C$",
+   "stage": "4",
+   "lure": "85%",
+   "luck": "125%",
+   "control": "0.15"
+  },
+  {
+   "name": "Castbound",
+   "journal": "Limited",
+   "source": "The Guide Level 1000",
+   "stage": "9",
+   "lure": "inf",
+   "luck": "390%",
+   "control": "0.14"
+  },
+  {
+   "name": "Celestial Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 350",
+   "stage": "7",
+   "lure": "50%",
+   "luck": "60%",
+   "control": "0.21"
+  },
+  {
+   "name": "Cerebra",
+   "journal": "Limited",
+   "source": "Nurse May",
+   "stage": "2",
+   "lure": "200%",
+   "luck": "95%",
+   "control": "0.2"
+  },
+  {
+   "name": "Cerulean Fang Rod",
+   "journal": "Luminescent Cavern",
+   "source": "Purchasing 800,000 C$ Level 400",
+   "stage": "6",
+   "lure": "75%",
+   "luck": "190%",
+   "control": "0.25"
+  },
+  {
+   "name": "Challenger's Rod",
+   "journal": "Challenger's Deep",
+   "source": "Purchasing 750,000 C$ Level 110",
+   "stage": "6",
+   "lure": "95%",
+   "luck": "110%",
+   "control": "0.2"
+  },
+  {
+   "name": "Champions Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 90,000 C$",
+   "stage": "4",
+   "lure": "80%",
+   "luck": "130%",
+   "control": "0.25"
+  },
+  {
+   "name": "Cheeto Rod",
+   "journal": "Limited",
+   "source": "Carbon",
+   "stage": "1",
+   "lure": "40%",
+   "luck": "15%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Christmas Tree Rod",
+   "journal": "Limited",
+   "source": "Advent Calendar",
+   "stage": "1",
+   "lure": "50%",
+   "luck": "75%",
+   "control": "0.1"
+  },
+  {
+   "name": "Chrysalis",
+   "journal": "Limited",
+   "source": "Hex Level 1000",
+   "stage": "8",
+   "lure": "100%",
+   "luck": "150%",
+   "control": "0"
+  },
+  {
+   "name": "Cinder Block Rod",
+   "journal": "Ocean",
+   "source": "Purchasing 50,000 C$",
+   "stage": "3",
+   "lure": "-50%",
+   "luck": "350%",
+   "control": "0.7"
+  },
+  {
+   "name": "Cinderstring",
+   "journal": "Limited",
+   "source": "Rick",
+   "stage": "7",
+   "lure": "95%",
+   "luck": "175%",
+   "control": "0"
+  },
+  {
+   "name": "Clickbait Caster",
+   "journal": "Limited",
+   "source": "Given to Official Content Creators who promoted the Mariana's Veil upd",
+   "stage": "0",
+   "lure": "50%",
+   "luck": "225%",
+   "control": "0.25"
+  },
+  {
+   "name": "Clover Rod",
+   "journal": "Limited",
+   "source": "Code",
+   "stage": "1",
+   "lure": "80%",
+   "luck": "300%",
+   "control": "-0.14"
+  },
+  {
+   "name": "Coral Rod",
+   "journal": "Coral Bastion",
+   "source": "50% Bestiary 30,000 C$",
+   "stage": "4",
+   "lure": "72%",
+   "luck": "74%",
+   "control": "0.02"
+  },
+  {
+   "name": "Cornucopia Rod",
+   "journal": "Limited",
+   "source": "Pilgrim",
+   "stage": "6",
+   "lure": "90%",
+   "luck": "112.7%",
+   "control": "0.05"
+  },
+  {
+   "name": "Creamsicle Rod",
+   "journal": "Limited",
+   "source": "Purchasing 6,500 Sunshells",
+   "stage": "3",
+   "lure": "75%",
+   "luck": "120%",
+   "control": "0.05"
+  },
+  {
+   "name": "Crew Rod",
+   "journal": "Regionless",
+   "source": "5,000 Crew Reputation 70,000 C$ Level 500",
+   "stage": "0",
+   "lure": "80%",
+   "luck": "250%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Crimsonwrath",
+   "journal": "Limited",
+   "source": "Black Market 15,000,000 C$",
+   "stage": "8",
+   "lure": "inf",
+   "luck": "100%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Crowbar",
+   "journal": "Limited",
+   "source": "Doug Level 981",
+   "stage": "10",
+   "lure": "85%",
+   "luck": "245%",
+   "control": "0.15"
+  },
+  {
+   "name": "Cryolash",
+   "journal": "Boreal Pines",
+   "source": "100% Bestiary 3,500,000 C$ Level 650",
+   "stage": "6",
+   "lure": "87%",
+   "luck": "149%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Crystalized Rod",
+   "journal": "Overgrowth Caves",
+   "source": "Purchasing 35,000 C$",
+   "stage": "3",
+   "lure": "35%",
+   "luck": "90%",
+   "control": "0.15"
+  },
+  {
+   "name": "Cupid's Bow",
+   "journal": "Limited",
+   "source": "Purchasing 25,000 Chocolates",
+   "stage": "7",
+   "lure": "120%",
+   "luck": "125%",
+   "control": "-0.02"
+  },
+  {
+   "name": "Cupid's Embrace",
+   "journal": "Limited",
+   "source": "Crafting 15,000 C$ Level 100",
+   "stage": "7",
+   "lure": "70%",
+   "luck": "214%",
+   "control": "0.1"
+  },
+  {
+   "name": "Dave Rod",
+   "journal": "Regionless",
+   "source": "Dave Level 250",
+   "stage": "10",
+   "lure": "1e+21%",
+   "luck": "-1e+21%",
+   "control": "0.7"
+  },
+  {
+   "name": "Daybreaker Rod",
+   "journal": "Scoria Reach",
+   "source": "50% Bestiary 750,000 C$ Level 50",
+   "stage": "6",
+   "lure": "70%",
+   "luck": "125%",
+   "control": "-0.05"
+  },
+  {
+   "name": "Dead Man's Rod",
+   "journal": "Ocean",
+   "source": "Crafting 5,000,000 C$ Level 1000",
+   "stage": "9",
+   "lure": "95%",
+   "luck": "300%",
+   "control": "0"
+  },
+  {
+   "name": "Decayed Rod",
+   "journal": "Toxic Grove",
+   "source": "Purchasing 2,000 C$",
+   "stage": "3",
+   "lure": "75%",
+   "luck": "40%",
+   "control": "-0.05"
+  },
+  {
+   "name": "Demon-Slayer",
+   "journal": "Limited",
+   "source": "Code",
+   "stage": "1",
+   "lure": "100%",
+   "luck": "-50%",
+   "control": "0"
+  },
+  {
+   "name": "Depthseeker Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 40,000 C$",
+   "stage": "3",
+   "lure": "55%",
+   "luck": "70%",
+   "control": "0.17"
+  },
+  {
+   "name": "Destiny Rod",
+   "journal": "Ocean",
+   "source": "Caleia 190,000 C$",
+   "stage": "6",
+   "lure": "45%",
+   "luck": "250%",
+   "control": "0.2"
+  },
+  {
+   "name": "Dreambreaker",
+   "journal": "Cultist Lair",
+   "source": "The Restless One 5,000,000 C$ Level 750",
+   "stage": "7",
+   "lure": "120%",
+   "luck": "215%",
+   "control": "0.23"
+  },
+  {
+   "name": "Dusekkar Rod",
+   "journal": "Limited",
+   "source": "Purchasing 25,000 Candy",
+   "stage": "7",
+   "lure": "80%",
+   "luck": "166%",
+   "control": "0.05"
+  },
+  {
+   "name": "Duskwire",
+   "journal": "Crystal Cove",
+   "source": "Hollow 1,750,001 C$ Level 275",
+   "stage": "6",
+   "lure": "100%",
+   "luck": "175%",
+   "control": "-0.2"
+  },
+  {
+   "name": "Eardrum",
+   "journal": "Limited",
+   "source": "Holladay",
+   "stage": "6",
+   "lure": "90%",
+   "luck": "125%",
+   "control": "0.3"
+  },
+  {
+   "name": "Egg Rod",
+   "journal": "Limited",
+   "source": "Easter Bunny",
+   "stage": "2",
+   "lure": "75%",
+   "luck": "75%",
+   "control": "0.15"
+  },
+  {
+   "name": "Eidolon Rod",
+   "journal": "Cultist Lair",
+   "source": "Purchasing 2,000,000 C$ Level 350",
+   "stage": "7",
+   "lure": "100%",
+   "luck": "50%",
+   "control": "0.25"
+  },
+  {
+   "name": "Elder Mossripper",
+   "journal": "Lost Jungle",
+   "source": "Crafting 350,000 C$ Level 350",
+   "stage": "8",
+   "lure": "90%",
+   "luck": "215%",
+   "control": "0.2"
+  },
+  {
+   "name": "Electric Guitar",
+   "journal": "Limited",
+   "source": "Black Market 14,444,444 C$",
+   "stage": "8",
+   "lure": "444%",
+   "luck": "244%",
+   "control": "0.14"
+  },
+  {
+   "name": "Ethereal Prism Rod",
+   "journal": "Calm Zone",
+   "source": "100% Bestiary 3,500,000 C$ Level 250",
+   "stage": "7",
+   "lure": "95%",
+   "luck": "195%",
+   "control": "0.25"
+  },
+  {
+   "name": "Event Horizon Rod",
+   "journal": "Limited",
+   "source": "Code",
+   "stage": "1",
+   "lure": "10%",
+   "luck": "30%",
+   "control": "0.05"
+  },
+  {
+   "name": "Evil Pitchfork",
+   "journal": "Crimson Cavern",
+   "source": "Crafting 2,500,000 C$ Level 500",
+   "stage": "7",
+   "lure": "150%",
+   "luck": "120%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Experimental Rod",
+   "journal": "Limited",
+   "source": "Takeover Challenger",
+   "stage": "1",
+   "lure": "12.2346%",
+   "luck": "123.4567%",
+   "control": "0.1234"
+  },
+  {
+   "name": "Fabulous Rod",
+   "journal": "Calm Zone",
+   "source": "Fabulous Deity Level 1000",
+   "stage": "10",
+   "lure": "100%",
+   "luck": "300%",
+   "control": "0"
+  },
+  {
+   "name": "Fallen Rod",
+   "journal": "Tidefall",
+   "source": "Purchasing 175,000 C$",
+   "stage": "5",
+   "lure": "70%",
+   "luck": "95%",
+   "control": "0.12"
+  },
+  {
+   "name": "Fallen Snowblade",
+   "journal": "Limited",
+   "source": "Sno & Leprechaun Sno",
+   "stage": "8",
+   "lure": "75%",
+   "luck": "219%",
+   "control": "0.39"
+  },
+  {
+   "name": "Fang of the Eclipse",
+   "journal": "Limited",
+   "source": "Leveling Up Level 2000",
+   "stage": "8",
+   "lure": "80%",
+   "luck": "80%",
+   "control": "0.15"
+  },
+  {
+   "name": "Fast Rod",
+   "journal": "Moosewood",
+   "source": "Purchasing 4,000 C$",
+   "stage": "1",
+   "lure": "70%",
+   "luck": "10%",
+   "control": "0.05"
+  },
+  {
+   "name": "Firefly Rod",
+   "journal": "Castaway Cliffs",
+   "source": "40% Bestiary 9,500 C$",
+   "stage": "1",
+   "lure": "85%",
+   "luck": "55%",
+   "control": "-0.01"
+  },
+  {
+   "name": "Firework Rod",
+   "journal": "Limited",
+   "source": "Dr Glimmerfin",
+   "stage": "2",
+   "lure": "35%",
+   "luck": "45%",
+   "control": "0.15"
+  },
+  {
+   "name": "Fischer's Rod",
+   "journal": "Limited",
+   "source": "Starter Pack 99",
+   "stage": "0",
+   "lure": "10%",
+   "luck": "10%",
+   "control": "0.05"
+  },
+  {
+   "name": "Fischmas Rod",
+   "journal": "Limited",
+   "source": "XMAS Pack 799",
+   "stage": "0",
+   "lure": "10%",
+   "luck": "45%",
+   "control": "0.05"
+  },
+  {
+   "name": "Fish Photographer",
+   "journal": "Limited",
+   "source": "Given to Official Content Creators who promoted the Cursed Seas update",
+   "stage": "0",
+   "lure": "70%",
+   "luck": "250%",
+   "control": "0.3"
+  },
+  {
+   "name": "Fixer's Rod",
+   "journal": "Limited",
+   "source": "Fixer",
+   "stage": "1",
+   "lure": "60%",
+   "luck": "60%",
+   "control": "0.3"
+  },
+  {
+   "name": "Flimsy Rod",
+   "journal": "Moosewood",
+   "source": "Joining the game 0 C$",
+   "stage": "1",
+   "lure": "0%",
+   "luck": "0%",
+   "control": "0"
+  },
+  {
+   "name": "Floatie Rod",
+   "journal": "Limited",
+   "source": "Competitive Carter",
+   "stage": "3",
+   "lure": "80%",
+   "luck": "140%",
+   "control": "0.05"
+  },
+  {
+   "name": "Fortune Rod",
+   "journal": "Roslit Bay",
+   "source": "Purchasing 11,000 C$",
+   "stage": "2",
+   "lure": "30%",
+   "luck": "200%",
+   "control": "0.05"
+  },
+  {
+   "name": "Free Spirit Rod",
+   "journal": "Mineshaft",
+   "source": "100% Bestiary 200,000 C$",
+   "stage": "5",
+   "lure": "55%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Friendly Rod",
+   "journal": "Moosewood",
+   "source": "Friend Quests",
+   "stage": "4",
+   "lure": "85%",
+   "luck": "105%",
+   "control": "0.05"
+  },
+  {
+   "name": "Frog Rod",
+   "journal": "Mushgrove Swamp",
+   "source": "50% Bestiary 12,000 C$",
+   "stage": "1",
+   "lure": "60%",
+   "luck": "100%",
+   "control": "0.15"
+  },
+  {
+   "name": "Frost Warden Rod",
+   "journal": "Limited",
+   "source": "Winter Bundle 799",
+   "stage": "0",
+   "lure": "10%",
+   "luck": "45%",
+   "control": "0.05"
+  },
+  {
+   "name": "Frostbane Rod",
+   "journal": "Limited",
+   "source": "Icestorm & Snowstorm Admin Events 1,500,000 C$",
+   "stage": "0",
+   "lure": "80%",
+   "luck": "85%",
+   "control": "0.05"
+  },
+  {
+   "name": "Frostfire Rod",
+   "journal": "Limited",
+   "source": "XMAS Pack (II) 799",
+   "stage": "0",
+   "lure": "20%",
+   "luck": "35%",
+   "control": "0.08"
+  },
+  {
+   "name": "Fungal Rod",
+   "journal": "Mushgrove Swamp",
+   "source": "Agaric",
+   "stage": "2",
+   "lure": "40%",
+   "luck": "45%",
+   "control": "0"
+  },
+  {
+   "name": "Gardenkeeper Rod",
+   "journal": "Living Garden",
+   "source": "Crafting 320,000 C$ Level 300",
+   "stage": "5",
+   "lure": "95%",
+   "luck": "50%",
+   "control": "0.25"
+  },
+  {
+   "name": "Gingerbread Rod",
+   "journal": "Limited",
+   "source": "Purchasing 5,000 C$",
+   "stage": "1",
+   "lure": "50%",
+   "luck": "65%",
+   "control": "0.1"
+  },
+  {
+   "name": "Great Dreamer Rod",
+   "journal": "Cursed Isle",
+   "source": "50% Bestiary 700,000 C$",
+   "stage": "5",
+   "lure": "75%",
+   "luck": "147%",
+   "control": "0.17"
+  },
+  {
+   "name": "Great Rod of Oscar",
+   "journal": "Ocean",
+   "source": "Purchasing 2,500,000 C$ Level 250",
+   "stage": "6",
+   "lure": "95%",
+   "luck": "280%",
+   "control": "0.1"
+  },
+  {
+   "name": "Hades' Soul-Scythe",
+   "journal": "Hades' Underworld of Indefinite",
+   "source": "100% Bestiary 25,000,000 C$ Level 750",
+   "stage": "9",
+   "lure": "200%",
+   "luck": "250%",
+   "control": "0.1"
+  },
+  {
+   "name": "Haunted Rod",
+   "journal": "Limited",
+   "source": "Witch",
+   "stage": "2",
+   "lure": "50%",
+   "luck": "50%",
+   "control": "0.05"
+  },
+  {
+   "name": "Heaven's Rod",
+   "journal": "Glacial Grotto",
+   "source": "Purchasing 1,750,000 C$ Level 220",
+   "stage": "7",
+   "lure": "40%",
+   "luck": "250%",
+   "control": "0.2"
+  },
+  {
+   "name": "Ice Warpers Rod",
+   "journal": "Frigid Cavern",
+   "source": "Purchasing 65,000 C$",
+   "stage": "4",
+   "lure": "50%",
+   "luck": "60%",
+   "control": "0.15"
+  },
+  {
+   "name": "Igneous Rupturer",
+   "journal": "Scoria Reach",
+   "source": "Scoria Guard 5,000,000 C$ Level 500",
+   "stage": "8",
+   "lure": "60%",
+   "luck": "100%",
+   "control": "0.3"
+  },
+  {
+   "name": "Jack-o-Blazer",
+   "journal": "Limited",
+   "source": "Headless Horseman",
+   "stage": "6",
+   "lure": "96%",
+   "luck": "166.6%",
+   "control": "0.16"
+  },
+  {
+   "name": "Jinglestar Rod",
+   "journal": "Limited",
+   "source": "Advent Calendar",
+   "stage": "1",
+   "lure": "85%",
+   "luck": "122.5%",
+   "control": "0.4"
+  },
+  {
+   "name": "Katana Rod",
+   "journal": "Limited",
+   "source": "Black Market 1,000,000 C$",
+   "stage": "6",
+   "lure": "95%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Kings Rod",
+   "journal": "Keepers Altar",
+   "source": "Purchasing 100,000 C$",
+   "stage": "4",
+   "lure": "30%",
+   "luck": "85%",
+   "control": "0.15"
+  },
+  {
+   "name": "Kraken Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 950,000 C$ Level 180",
+   "stage": "6",
+   "lure": "60%",
+   "luck": "185%",
+   "control": "0.2"
+  },
+  {
+   "name": "Krampus's Rod",
+   "journal": "Limited",
+   "source": "Crafting 30,000 C$ Level 150",
+   "stage": "5",
+   "lure": "50%",
+   "luck": "15%",
+   "control": "0.15"
+  },
+  {
+   "name": "Lemonade Serenade",
+   "journal": "Limited",
+   "source": "Purchasing 20 Lagoon lemonade",
+   "stage": "8",
+   "lure": "100%",
+   "luck": "230%",
+   "control": "0.2"
+  },
+  {
+   "name": "Leprechaun Line",
+   "journal": "Limited",
+   "source": "Clover Captain",
+   "stage": "7",
+   "lure": "55%",
+   "luck": "350%",
+   "control": "0"
+  },
+  {
+   "name": "Leviathan's Fang Rod",
+   "journal": "Veil of the Forsaken",
+   "source": "Purchasing 350,000 C$",
+   "stage": "6",
+   "lure": "85%",
+   "luck": "180%",
+   "control": "0.1"
+  },
+  {
+   "name": "Liberty-Line",
+   "journal": "Limited",
+   "source": "Liberty Larry",
+   "stage": "3",
+   "lure": "75%",
+   "luck": "150%",
+   "control": "0.1"
+  },
+  {
+   "name": "Lobster Rod",
+   "journal": "Limited",
+   "source": "Mike",
+   "stage": "3",
+   "lure": "60%",
+   "luck": "110%",
+   "control": "0.3"
+  },
+  {
+   "name": "Long Rod",
+   "journal": "Moosewood",
+   "source": "Purchasing 3,000 C$",
+   "stage": "1",
+   "lure": "20%",
+   "luck": "80%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Lucid Rod",
+   "journal": "Cultist Lair",
+   "source": "Crafting 80,000 C$ Level 50",
+   "stage": "7",
+   "lure": "80%",
+   "luck": "100%",
+   "control": "-0.05"
+  },
+  {
+   "name": "Lucky Rod",
+   "journal": "Moosewood",
+   "source": "Purchasing 4,500 C$",
+   "stage": "1",
+   "lure": "20%",
+   "luck": "177%",
+   "control": "0.07"
+  },
+  {
+   "name": "Lullaby",
+   "journal": "Limited",
+   "source": "Simon Level 500",
+   "stage": "10",
+   "lure": "90%",
+   "luck": "225%",
+   "control": "0.25"
+  },
+  {
+   "name": "Luminescent Oath",
+   "journal": "Luminescent Cavern",
+   "source": "100% Bestiary 1,000,000 C$ Level 500",
+   "stage": "7",
+   "lure": "85%",
+   "luck": "200%",
+   "control": "0.1"
+  },
+  {
+   "name": "Luminous Rod",
+   "journal": "The Deep",
+   "source": "Dr. Vane",
+   "stage": "",
+   "lure": "70%",
+   "luck": "95%",
+   "control": "0.1"
+  },
+  {
+   "name": "Maelstrom",
+   "journal": "Limited",
+   "source": "Purchasing 3,250,000 C$",
+   "stage": "8",
+   "lure": "80%",
+   "luck": "85%",
+   "control": "0.15"
+  },
+  {
+   "name": "Magma Rod",
+   "journal": "Roslit Volcano",
+   "source": "Orc",
+   "stage": "2",
+   "lure": "45%",
+   "luck": "55%",
+   "control": "0.15"
+  },
+  {
+   "name": "Magnet Rod",
+   "journal": "Terrapin Island",
+   "source": "Purchasing 15,000 C$",
+   "stage": "2",
+   "lure": "-10%",
+   "luck": "0%",
+   "control": "0.05"
+  },
+  {
+   "name": "Marrow Rod",
+   "journal": "Drylands",
+   "source": "Crafting 100,000 C$",
+   "stage": "3",
+   "lure": "30%",
+   "luck": "80%",
+   "control": "0.1"
+  },
+  {
+   "name": "Masterline Rod",
+   "journal": "Regionless",
+   "source": "100% Rod Journal & Bestiary",
+   "stage": "11",
+   "lure": "1000%",
+   "luck": "350%",
+   "control": "0.15"
+  },
+  {
+   "name": "Merchant Rod",
+   "journal": "Limited",
+   "source": "Purchasing 20,000 E$",
+   "stage": "2",
+   "lure": "75%",
+   "luck": "60%",
+   "control": "0.05"
+  },
+  {
+   "name": "Merlin's Staff",
+   "journal": "Sunstone Island",
+   "source": "Merlin 1,000,000 C$",
+   "stage": "6",
+   "lure": "80%",
+   "luck": "102.54%",
+   "control": "0.1"
+  },
+  {
+   "name": "Microphone Rod",
+   "journal": "Limited",
+   "source": "Streamer",
+   "stage": "2",
+   "lure": "100%",
+   "luck": "80%",
+   "control": "0"
+  },
+  {
+   "name": "Midas Rod",
+   "journal": "Ocean",
+   "source": "Purchasing 55,000 C$",
+   "stage": "3",
+   "lure": "70%",
+   "luck": "79%",
+   "control": "0.2"
+  },
+  {
+   "name": "MiguRod",
+   "journal": "Limited",
+   "source": "Migura 4,014,014 C$ Level 401",
+   "stage": "8",
+   "lure": "427%",
+   "luck": "237%",
+   "control": "0.101"
+  },
+  {
+   "name": "Mission Specialist's Rod",
+   "journal": "Limited",
+   "source": "Mission Specialist",
+   "stage": "1",
+   "lure": "60%",
+   "luck": "60%",
+   "control": "0.1"
+  },
+  {
+   "name": "Moonlit Rod",
+   "journal": "Regionless",
+   "source": "Purchasing 75 S$",
+   "stage": "3",
+   "lure": "78%",
+   "luck": "160%",
+   "control": "0.05"
+  },
+  {
+   "name": "Mythical Rod",
+   "journal": "Ocean",
+   "source": "Purchasing 90,000 C$",
+   "stage": "4",
+   "lure": "40%",
+   "luck": "60%",
+   "control": "0.05"
+  },
+  {
+   "name": "Nates Blade",
+   "journal": "Limited",
+   "source": "Black Market 200,000,000 C$",
+   "stage": "9",
+   "lure": "119%",
+   "luck": "244%",
+   "control": "0"
+  },
+  {
+   "name": "Necrotic Rod",
+   "journal": "Limited",
+   "source": "Crafting 660,000 C$ Level 100",
+   "stage": "8",
+   "lure": "82%",
+   "luck": "143%",
+   "control": "0.05"
+  },
+  {
+   "name": "New Years Rod",
+   "journal": "Limited",
+   "source": "Purchasing 20,260 C$",
+   "stage": "3",
+   "lure": "26%",
+   "luck": "126%",
+   "control": "0.26"
+  },
+  {
+   "name": "Nico's Yarncaster",
+   "journal": "Crystal Cove",
+   "source": "Crazy Cat Lady",
+   "stage": "6",
+   "lure": "65%",
+   "luck": "75%",
+   "control": "0.1"
+  },
+  {
+   "name": "NilCaster",
+   "journal": "Limited",
+   "source": "Given to select Game Testers with significant testing contributions",
+   "stage": "0",
+   "lure": "101%",
+   "luck": "101%",
+   "control": "0.101"
+  },
+  {
+   "name": "No-Life Rod",
+   "journal": "Regionless",
+   "source": "Leveling Up Level 500",
+   "stage": "6",
+   "lure": "90%",
+   "luck": "105%",
+   "control": "0.23"
+  },
+  {
+   "name": "Noctone",
+   "journal": "Limited",
+   "source": "Axe of Rhoads",
+   "stage": "8",
+   "lure": "85%",
+   "luck": "155%",
+   "control": "0.25"
+  },
+  {
+   "name": "Nocturnal Rod",
+   "journal": "Vertigo",
+   "source": "Purchasing 11,000 C$",
+   "stage": "2",
+   "lure": "50%",
+   "luck": "70%",
+   "control": "0"
+  },
+  {
+   "name": "Noiseform",
+   "journal": "Limited",
+   "source": "Mysterious Shadow",
+   "stage": "10",
+   "lure": "125%",
+   "luck": "290%",
+   "control": "0"
+  },
+  {
+   "name": "North Pole",
+   "journal": "Limited",
+   "source": "Crafting 15,000 Bells Level 500",
+   "stage": "9",
+   "lure": "90%",
+   "luck": "177%",
+   "control": "0"
+  },
+  {
+   "name": "North-Star Rod",
+   "journal": "Limited",
+   "source": "Advent Calendar",
+   "stage": "1",
+   "lure": "5%",
+   "luck": "30%",
+   "control": "0.04"
+  },
+  {
+   "name": "Olympian Godbreaker",
+   "journal": "Olympian Fissure",
+   "source": "100% Bellona's Frenzy of War , Apollo's Song of Light , Poseidon's Sto",
+   "stage": "10",
+   "lure": "98.1%",
+   "luck": "265%",
+   "control": "0.18"
+  },
+  {
+   "name": "Onirifalx",
+   "journal": "The Depths",
+   "source": "Nick Level 1000",
+   "stage": "8",
+   "lure": "777%",
+   "luck": "277%",
+   "control": "0.17"
+  },
+  {
+   "name": "Original No-Life Rod",
+   "journal": "Limited",
+   "source": "OG No-Life Rod Admin Event 1 C$",
+   "stage": "0",
+   "lure": "99%",
+   "luck": "100%",
+   "control": "0.2"
+  },
+  {
+   "name": "Paintbrush",
+   "journal": "Limited",
+   "source": "Given to winners of the Art Contest in the Fisch Discord Server",
+   "stage": "0",
+   "lure": "1618%",
+   "luck": "333%",
+   "control": "0.123"
+  },
+  {
+   "name": "Paleontologist's Rod",
+   "journal": "Limited",
+   "source": "Paleontologist",
+   "stage": "1",
+   "lure": "60%",
+   "luck": "150%",
+   "control": "0.1"
+  },
+  {
+   "name": "Paper Fan Rod",
+   "journal": "Limited",
+   "source": "Purchasing 70,000 C$",
+   "stage": "4",
+   "lure": "70%",
+   "luck": "75%",
+   "control": "-0.05"
+  },
+  {
+   "name": "Part",
+   "journal": "Limited",
+   "source": "BasePart Level 1",
+   "stage": "5",
+   "lure": "0%",
+   "luck": "0%",
+   "control": "0"
+  },
+  {
+   "name": "Patriot Rod",
+   "journal": "Limited",
+   "source": "Code",
+   "stage": "1",
+   "lure": "70%",
+   "luck": "100%",
+   "control": "0.04"
+  },
+  {
+   "name": "Pen Rod",
+   "journal": "Limited",
+   "source": "Given to Wiki Editors with significant editing contributions",
+   "stage": "0",
+   "lure": "65%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Peppermint Rod",
+   "journal": "Limited",
+   "source": "Purchasing 4,000 Bells",
+   "stage": "5",
+   "lure": "350%",
+   "luck": "50%",
+   "control": "0.12"
+  },
+  {
+   "name": "Phoenix Rod",
+   "journal": "Ancient Isle",
+   "source": "Purchasing 50,000 C$",
+   "stage": "3",
+   "lure": "55%",
+   "luck": "80%",
+   "control": "0.02"
+  },
+  {
+   "name": "Pinion's Aria",
+   "journal": "Crystal Cove",
+   "source": "Mysterious Songstress Level 424",
+   "stage": "7",
+   "lure": "142%",
+   "luck": "242%",
+   "control": "0"
+  },
+  {
+   "name": "Plaguereaver",
+   "journal": "Toxic Grove",
+   "source": "Plagued Reaper 13,750,000 C$ Level 650",
+   "stage": "8",
+   "lure": "15%",
+   "luck": "175%",
+   "control": "0.4"
+  },
+  {
+   "name": "Plastic Rod",
+   "journal": "Moosewood",
+   "source": "Purchasing 750 C$",
+   "stage": "1",
+   "lure": "20%",
+   "luck": "15%",
+   "control": "0"
+  },
+  {
+   "name": "Polaris Serenade",
+   "journal": "Limited",
+   "source": "Nick 50,000,000 C$",
+   "stage": "9",
+   "lure": "100%",
+   "luck": "300%",
+   "control": "0.4"
+  },
+  {
+   "name": "Pool Noodle Rod",
+   "journal": "Limited",
+   "source": "Purchasing 1,000 Sunshells",
+   "stage": "3",
+   "lure": "60%",
+   "luck": "60%",
+   "control": "0.05"
+  },
+  {
+   "name": "Popsicle Rod",
+   "journal": "Limited",
+   "source": "Purchasing 3,000 Shells",
+   "stage": "6",
+   "lure": "100%",
+   "luck": "150%",
+   "control": "0"
+  },
+  {
+   "name": "Poseidon Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 700,000 C$ Level 100",
+   "stage": "6",
+   "lure": "50%",
+   "luck": "165%",
+   "control": "0.2"
+  },
+  {
+   "name": "Poseidon's Lance",
+   "journal": "Poseidon's Storm of Floods",
+   "source": "100% Bestiary 13,000,000 C$ Level 500",
+   "stage": "8",
+   "lure": "85%",
+   "luck": "175%",
+   "control": "0"
+  },
+  {
+   "name": "Precision Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 5",
+   "stage": "2",
+   "lure": "20%",
+   "luck": "150%",
+   "control": "0"
+  },
+  {
+   "name": "Rainbow Cluster Rod",
+   "journal": "Castaway Cliffs",
+   "source": "Purchasing 250,000 C$",
+   "stage": "5",
+   "lure": "65%",
+   "luck": "180%",
+   "control": "0"
+  },
+  {
+   "name": "Random Rod",
+   "journal": "Regionless",
+   "source": "Purchasing 1\u22129,999,999 C$ Level 100",
+   "stage": "6",
+   "lure": "80%",
+   "luck": "350%",
+   "control": "0.1"
+  },
+  {
+   "name": "Rapid Rod",
+   "journal": "Roslit Bay",
+   "source": "Purchasing 12,000 C$",
+   "stage": "2",
+   "lure": "89%",
+   "luck": "49%",
+   "control": "0"
+  },
+  {
+   "name": "Reinforced Rod",
+   "journal": "Desolate Deep",
+   "source": "Purchasing 20,000 C$",
+   "stage": "3",
+   "lure": "40%",
+   "luck": "65%",
+   "control": "0.1"
+  },
+  {
+   "name": "Relic Rod",
+   "journal": "Limited",
+   "source": "Purchasing 8,000 C$",
+   "stage": "2",
+   "lure": "80%",
+   "luck": "125%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Remembrance",
+   "journal": "Limited",
+   "source": "Luneth Level 1000",
+   "stage": "9",
+   "lure": "100%",
+   "luck": "300%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Requiem",
+   "journal": "Sunken Reliquary",
+   "source": "Crafting 15,000,000 C$ Level 1000",
+   "stage": "10",
+   "lure": "120%",
+   "luck": "277%",
+   "control": "0.1"
+  },
+  {
+   "name": "Resourceful Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 50",
+   "stage": "5",
+   "lure": "30%",
+   "luck": "60%",
+   "control": "-0.01"
+  },
+  {
+   "name": "Riptide Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 30",
+   "stage": "5",
+   "lure": "60%",
+   "luck": "100%",
+   "control": "0.05"
+  },
+  {
+   "name": "Rod Of The Depths",
+   "journal": "The Depths",
+   "source": "Purchasing 750,000 C$",
+   "stage": "6",
+   "lure": "65%",
+   "luck": "130%",
+   "control": "0.15"
+  },
+  {
+   "name": "Rod Of The Eternal King",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 400",
+   "stage": "8",
+   "lure": "50%",
+   "luck": "160%",
+   "control": "0.175"
+  },
+  {
+   "name": "Rod Of The Exalted One",
+   "journal": "Regionless",
+   "source": "The Keeper's Secret Level 150",
+   "stage": "6",
+   "lure": "55%",
+   "luck": "170%",
+   "control": "0.15"
+  },
+  {
+   "name": "Rod Of The Forgotten Fang",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 700",
+   "stage": "6",
+   "lure": "80%",
+   "luck": "175%",
+   "control": "0.22"
+  },
+  {
+   "name": "Rod Of The Zenith",
+   "journal": "Abyssal Zenith",
+   "source": "Purchasing 1,500,000 C$ Level 150",
+   "stage": "7",
+   "lure": "85%",
+   "luck": "145%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Rod Of Time",
+   "journal": "Limited",
+   "source": "Crafting",
+   "stage": "2",
+   "lure": "20%",
+   "luck": "25%",
+   "control": "0.05"
+  },
+  {
+   "name": "Rod of the Cosmos",
+   "journal": "Limited",
+   "source": "Meteorologist",
+   "stage": "6",
+   "lure": "50%",
+   "luck": "135%",
+   "control": "0.1"
+  },
+  {
+   "name": "Rose Rend",
+   "journal": "Limited",
+   "source": "Merchandise",
+   "stage": "0",
+   "lure": "85%",
+   "luck": "115%",
+   "control": "0.15"
+  },
+  {
+   "name": "Rose Rod",
+   "journal": "Limited",
+   "source": "Purchasing 2,140 Chocolates",
+   "stage": "2",
+   "lure": "70%",
+   "luck": "65%",
+   "control": "0.14"
+  },
+  {
+   "name": "Ruinous Oath",
+   "journal": "Crimson Cavern",
+   "source": "100% Sparkling / Shiny Bestiary 5,000,000 C$ Level 750",
+   "stage": "8",
+   "lure": "95%",
+   "luck": "300%",
+   "control": "0.08"
+  },
+  {
+   "name": "SOULREAPER",
+   "journal": "Limited",
+   "source": "Reaper Level 1000",
+   "stage": "10",
+   "lure": "999.999%",
+   "luck": "288.88%",
+   "control": "0.177"
+  },
+  {
+   "name": "Sand Castle Caster",
+   "journal": "Limited",
+   "source": "Crafting 5,000 Sunshells Level 50",
+   "stage": "3",
+   "lure": "70%",
+   "luck": "100%",
+   "control": "0.05"
+  },
+  {
+   "name": "Sanguine Spire",
+   "journal": "Limited",
+   "source": "CORRUPTION Admin Event 10,000,000 C$",
+   "stage": "0",
+   "lure": "100%",
+   "luck": "100%",
+   "control": "0.125"
+  },
+  {
+   "name": "Santa's Miracle Rod",
+   "journal": "Limited",
+   "source": "Santa",
+   "stage": "4",
+   "lure": "125%",
+   "luck": "125%",
+   "control": "0.25"
+  },
+  {
+   "name": "Scarlet Ravager",
+   "journal": "Limited",
+   "source": "Merchandise",
+   "stage": "0",
+   "lure": "90%",
+   "luck": "125%",
+   "control": "0.2"
+  },
+  {
+   "name": "Scarlet Spincaster Rod",
+   "journal": "Crimson Cavern",
+   "source": "Crafting 15,000 C$ Level 100",
+   "stage": "6",
+   "lure": "50%",
+   "luck": "170%",
+   "control": "-0.2"
+  },
+  {
+   "name": "Scurvy Rod",
+   "journal": "Forsaken Shores",
+   "source": "Purchasing 40,000 C$",
+   "stage": "3",
+   "lure": "25%",
+   "luck": "50%",
+   "control": "0"
+  },
+  {
+   "name": "Seasons Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 40",
+   "stage": "5",
+   "lure": "25%",
+   "luck": "70%",
+   "control": "0.03"
+  },
+  {
+   "name": "Seraphic Rod",
+   "journal": "Regionless",
+   "source": "Leveling Up Level 1000",
+   "stage": "7",
+   "lure": "95%",
+   "luck": "150%",
+   "control": "0.25"
+  },
+  {
+   "name": "Shady Rod",
+   "journal": "Regionless",
+   "source": "Purchasing 4,000 S$",
+   "stage": "8",
+   "lure": "85%",
+   "luck": "350%",
+   "control": "0.08"
+  },
+  {
+   "name": "Shamrock Rod",
+   "journal": "Limited",
+   "source": "Clover McRich",
+   "stage": "2",
+   "lure": "25%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Silly Fun Happy Rod",
+   "journal": "Limited",
+   "source": "Silly Clown",
+   "stage": "4",
+   "lure": "inf",
+   "luck": "200%",
+   "control": "-0.01"
+  },
+  {
+   "name": "Smurf Rod",
+   "journal": "Limited",
+   "source": "Smurfette",
+   "stage": "1",
+   "lure": "15%",
+   "luck": "80%",
+   "control": "0.1"
+  },
+  {
+   "name": "Sovereign Doombringer",
+   "journal": "Limited",
+   "source": "Awarded to Official Content Creators who promoted the Northern Expedit",
+   "stage": "0",
+   "lure": "65%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Spirit of the Forest",
+   "journal": "Everturn Forest",
+   "source": "Thalor Virewood",
+   "stage": "4",
+   "lure": "40%",
+   "luck": "70%",
+   "control": "-0.02"
+  },
+  {
+   "name": "Spiritbinder",
+   "journal": "Ancient Archives",
+   "source": "Crafting 500,000 C$ Level 500",
+   "stage": "8",
+   "lure": "90%",
+   "luck": "125%",
+   "control": "0.03"
+  },
+  {
+   "name": "Splitbranch Twig",
+   "journal": "Everturn Forest",
+   "source": "Purchasing 25,000 C$",
+   "stage": "2",
+   "lure": "85%",
+   "luck": "100%",
+   "control": "-0.1"
+  },
+  {
+   "name": "Spooky Rod",
+   "journal": "Limited",
+   "source": "Witch",
+   "stage": "4",
+   "lure": "75%",
+   "luck": "66%",
+   "control": "0.2"
+  },
+  {
+   "name": "Starshell Rod",
+   "journal": "Limited",
+   "source": "Captain Conch",
+   "stage": "7",
+   "lure": "85%",
+   "luck": "180%",
+   "control": "0.1"
+  },
+  {
+   "name": "Steady Rod",
+   "journal": "Roslit Bay",
+   "source": "Purchasing 7,000 C$",
+   "stage": "2",
+   "lure": "-60%",
+   "luck": "35%",
+   "control": "0.05"
+  },
+  {
+   "name": "Steampunk Rod",
+   "journal": "Limited",
+   "source": "Rivet",
+   "stage": "8",
+   "lure": "75%",
+   "luck": "90%",
+   "control": "0.1"
+  },
+  {
+   "name": "Stone Hammer",
+   "journal": "Limited",
+   "source": "Code",
+   "stage": "1",
+   "lure": "100%",
+   "luck": "100%",
+   "control": "0.5"
+  },
+  {
+   "name": "Stone Rod",
+   "journal": "Ancient Isle",
+   "source": "Purchasing 2,000 C$",
+   "stage": "1",
+   "lure": "-5%",
+   "luck": "40%",
+   "control": "0.2"
+  },
+  {
+   "name": "Summit Rod",
+   "journal": "Cryogenic Canal",
+   "source": "Purchasing 500,000 C$",
+   "stage": "5",
+   "lure": "45%",
+   "luck": "75%",
+   "control": "0.25"
+  },
+  {
+   "name": "Sunken Rod",
+   "journal": "Ocean",
+   "source": "Treasure Hunting",
+   "stage": "6",
+   "lure": "50%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Superstar Rod",
+   "journal": "Limited",
+   "source": "Walmart Discovered Pass 199",
+   "stage": "0",
+   "lure": "50%",
+   "luck": "70%",
+   "control": "0.1"
+  },
+  {
+   "name": "Sweet-Stinger",
+   "journal": "Nectar Den",
+   "source": "100% Bestiary 150,000 C$",
+   "stage": "6",
+   "lure": "180%",
+   "luck": "172%",
+   "control": "0.14"
+  },
+  {
+   "name": "Sword of Darkness",
+   "journal": "Limited",
+   "source": "Black Market 50,000,000 C$",
+   "stage": "7",
+   "lure": "250%",
+   "luck": "250%",
+   "control": "-0.17"
+  },
+  {
+   "name": "Tempest Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 500,000 C$ Level 80",
+   "stage": "6",
+   "lure": "90%",
+   "luck": "120%",
+   "control": "0.15"
+  },
+  {
+   "name": "Terrotrapper",
+   "journal": "Drylands",
+   "source": "Crafting 100,000 C$ Level 200",
+   "stage": "7",
+   "lure": "82%",
+   "luck": "210%",
+   "control": "0.05"
+  },
+  {
+   "name": "Test Rod",
+   "journal": "Limited",
+   "source": "Buildaroo",
+   "stage": "6",
+   "lure": "150%",
+   "luck": "150%",
+   "control": "0.15"
+  },
+  {
+   "name": "Thalassar's Ruin",
+   "journal": "Tidefall",
+   "source": "Purchasing 14,500,000 C$",
+   "stage": "7",
+   "lure": "200%",
+   "luck": "250%",
+   "control": "-0.2"
+  },
+  {
+   "name": "The Boom Ball",
+   "journal": "Desolate Deep",
+   "source": "Purchasing 50,000 C$",
+   "stage": "4",
+   "lure": "0%",
+   "luck": "0%",
+   "control": "0.5"
+  },
+  {
+   "name": "The Lost Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 100",
+   "stage": "6",
+   "lure": "65%",
+   "luck": "140%",
+   "control": "0.08"
+  },
+  {
+   "name": "Tidal Wave Rod",
+   "journal": "Limited",
+   "source": "Barnacle Bill",
+   "stage": "4",
+   "lure": "50%",
+   "luck": "65%",
+   "control": "0.1"
+  },
+  {
+   "name": "Tidemourner",
+   "journal": "Tidefall",
+   "source": "Crafting 1,200,000 C$ Level 200",
+   "stage": "7",
+   "lure": "50%",
+   "luck": "250%",
+   "control": "0.4"
+  },
+  {
+   "name": "Tiki Rod",
+   "journal": "Limited",
+   "source": "File:Bonfire Blake.png Bonfire Blake",
+   "stage": "3",
+   "lure": "65%",
+   "luck": "90%",
+   "control": "0.05"
+  },
+  {
+   "name": "Titanium Rod",
+   "journal": "The Deep",
+   "source": "Crafting 200,000 C$ Level 250",
+   "stage": "",
+   "lure": "100%",
+   "luck": "180%",
+   "control": "0.3"
+  },
+  {
+   "name": "Toxic Spire Rod",
+   "journal": "Lost Jungle",
+   "source": "Crafting 170,000 C$ Level 90",
+   "stage": "6",
+   "lure": "87%",
+   "luck": "248%",
+   "control": "0.3"
+  },
+  {
+   "name": "Toxinburst Rod",
+   "journal": "Toxic Grove",
+   "source": "Crafting 185,000 C$ Level 150",
+   "stage": "6",
+   "lure": "83%",
+   "luck": "85%",
+   "control": "-0.02"
+  },
+  {
+   "name": "Training Rod",
+   "journal": "Moosewood",
+   "source": "Purchasing 300 C$",
+   "stage": "1",
+   "lure": "10%",
+   "luck": "-70%",
+   "control": "0.2"
+  },
+  {
+   "name": "Tranquility Rod",
+   "journal": "Regionless",
+   "source": "Sprout",
+   "stage": "8",
+   "lure": "65%",
+   "luck": "100%",
+   "control": "0.15"
+  },
+  {
+   "name": "Treasure Rod",
+   "journal": "Treasure Island",
+   "source": "Purchasing 50,000 C$",
+   "stage": "5",
+   "lure": "70%",
+   "luck": "130%",
+   "control": "0.12"
+  },
+  {
+   "name": "Trident Rod",
+   "journal": "Desolate Deep",
+   "source": "Purchasing 150,000 C$",
+   "stage": "5",
+   "lure": "35%",
+   "luck": "150%",
+   "control": "0.05"
+  },
+  {
+   "name": "Tryhard Rod",
+   "journal": "Roslit Volcano",
+   "source": "RoRed Level 999",
+   "stage": "8",
+   "lure": "80%",
+   "luck": "399%",
+   "control": "-0.37"
+  },
+  {
+   "name": "Upside-Down Rod",
+   "journal": "Limited",
+   "source": "Black Market 15,000 C$",
+   "stage": "2",
+   "lure": "0%",
+   "luck": "0%",
+   "control": "0"
+  },
+  {
+   "name": "Verdant Oath",
+   "journal": "Living Garden",
+   "source": "100% Nectar Den / Living Garden / Toxic Grove Bestiary 12,500,000 C$ L",
+   "stage": "9",
+   "lure": "95%",
+   "luck": "300%",
+   "control": "0.1"
+  },
+  {
+   "name": "Verdant Shear Rod",
+   "journal": "Lost Jungle",
+   "source": "75% Bestiary 50,000 C$",
+   "stage": "4",
+   "lure": "70%",
+   "luck": "75%",
+   "control": "0.1"
+  },
+  {
+   "name": "View Smasher",
+   "journal": "Limited",
+   "source": "Awarded to Official Content Creators who promoted the Cursed Seas upda",
+   "stage": "0",
+   "lure": "60%",
+   "luck": "230%",
+   "control": "0.25"
+  },
+  {
+   "name": "Vinefang Rod",
+   "journal": "Limited",
+   "source": "Jungle Adventurer",
+   "stage": "7",
+   "lure": "80%",
+   "luck": "117%",
+   "control": "-0.11"
+  },
+  {
+   "name": "Vineweaver Rod",
+   "journal": "Lost Jungle",
+   "source": "Crafting 150,000 C$ Level 70",
+   "stage": "6",
+   "lure": "80%",
+   "luck": "117%",
+   "control": "0.1"
+  },
+  {
+   "name": "Volcanic Rod",
+   "journal": "Volcanic Vents",
+   "source": "Purchasing 250,000 C$",
+   "stage": "5",
+   "lure": "40%",
+   "luck": "130%",
+   "control": "0.1"
+  },
+  {
+   "name": "Voyager Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 80",
+   "stage": "5",
+   "lure": "70%",
+   "luck": "160%",
+   "control": "0.08"
+  },
+  {
+   "name": "Wicked Fang Rod",
+   "journal": "Crimson Cavern",
+   "source": "Purchasing 400,000 C$ Level 300",
+   "stage": "7",
+   "lure": "95%",
+   "luck": "140%",
+   "control": "0"
+  },
+  {
+   "name": "Wildflower Rod",
+   "journal": "Terrapin Island",
+   "source": "Purchasing 40,000 C$",
+   "stage": "3",
+   "lure": "70%",
+   "luck": "75%",
+   "control": "0.17"
+  },
+  {
+   "name": "Wind Elemental",
+   "journal": "Glacial Grotto",
+   "source": "Wind Master Level 800",
+   "stage": "8",
+   "lure": "555%",
+   "luck": "255%",
+   "control": "0.055"
+  },
+  {
+   "name": "Wingkeeper",
+   "journal": "Limited",
+   "source": "Seraphel Level 424",
+   "stage": "8",
+   "lure": "111%",
+   "luck": "222%",
+   "control": "0.11"
+  },
+  {
+   "name": "Wingripper",
+   "journal": "Limited",
+   "source": "Goth",
+   "stage": "10",
+   "lure": "222%",
+   "luck": "222%",
+   "control": "0.22"
+  },
+  {
+   "name": "Wisdom Rod",
+   "journal": "Ancient Archives",
+   "source": "Crafting Level 50",
+   "stage": "5",
+   "lure": "55%",
+   "luck": "130%",
+   "control": "-0.02"
+  },
+  {
+   "name": "Zeus Rod",
+   "journal": "Atlantis",
+   "source": "Purchasing 850,000 C$ Level 150",
+   "stage": "6",
+   "lure": "70%",
+   "luck": "90%",
+   "control": "0.05"
+  },
+  {
+   "name": "Zeus's Thundermaul",
+   "journal": "Zeus's Thunder of Chaos",
+   "source": "100% Bestiary 18,750,000 C$ Level 600",
+   "stage": "8",
+   "lure": "65%",
+   "luck": "120%",
+   "control": "0.08"
+  }
+ ]
+}

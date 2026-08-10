@@ -1,0 +1,94 @@
+---
+/**
+ * 通用 Tier List 组件：职业榜、武器榜共用，输出 ItemList 结构化数据。
+ * 数据形状见 src/data/tier-list.json。
+ */
+interface Entry {
+  name: string;
+  role: string;
+  note: string;
+}
+interface Tier {
+  tier: string;
+  entries: Entry[];
+}
+interface Props {
+  subject: string;
+  updated: string;
+  intro: string;
+  tiers: Tier[];
+}
+const { subject, updated, intro, tiers } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `${subject} Tier List`,
+  itemListElement: tiers
+    .flatMap((t) => t.entries)
+    .map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name })),
+};
+---
+
+<p class="meta">Last updated: <strong>{updated}</strong></p>
+<p>{intro}</p>
+
+{
+  tiers.map((t) => (
+    <section class="tier">
+      <h2>
+        <span class:list={['badge', `t-${t.tier.toLowerCase()}`]}>{t.tier}</span> Tier
+      </h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            {t.entries.map((e) => (
+              <tr>
+                <td>
+                  <strong>{e.name}</strong>
+                </td>
+                <td>{e.role}</td>
+                <td>{e.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))
+}
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<style>
+  .meta {
+    color: var(--muted);
+  }
+  .badge {
+    display: inline-block;
+    min-width: 2rem;
+    text-align: center;
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--radius);
+    color: white;
+    background: var(--primary);
+  }
+  .badge.t-s {
+    background: oklch(0.6 0.2 25);
+  }
+  .badge.t-a {
+    background: oklch(0.65 0.16 60);
+  }
+  .badge.t-b {
+    background: oklch(0.6 0.13 145);
+  }
+  .tier {
+    margin-bottom: 1.5rem;
+  }
+</style>

@@ -1,0 +1,26 @@
+{
+  "subject": "Weapons",
+  "updated": "2026-07-22",
+  "intro": "Top weapons ranked by damage, utility and drop accessibility, with where to get each one.",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "name": "Stormcaller Bow", "role": "Ranger", "note": "Chain lightning on crit. Drops from the Skyover final boss." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "name": "Bulwark Greatsword", "role": "Warrior", "note": "Best stagger in the game. Craftable at Forge level 3." },
+        { "name": "Emberstaff", "role": "Mage", "note": "AoE burn stacks. Buy from the faction vendor after rank 2." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "name": "Pilgrim's Warhammer", "role": "Mystic", "note": "Solid hybrid option until you unlock endgame drops." }
+      ]
+    }
+  ]
+}

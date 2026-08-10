@@ -1,0 +1,227 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FaqSection from '../components/FaqSection.astro';
+import { SITE } from '../config/site';
+import faqs from '../data/faq.json';
+import news from '../data/news.json';
+
+const guides = await getCollection('guides');
+const g = SITE.game;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoGame',
+    name: SITE.gameName,
+    gamePlatform: g.platforms,
+    genre: g.genre,
+    datePublished: g.releaseDate,
+    author: { '@type': 'Organization', name: g.developer },
+    url: Astro.site?.href,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE.siteName,
+    url: Astro.site?.href,
+  },
+];
+---
+
+<BaseLayout
+  title={`${SITE.gameName} Guide, Codes & Tools`}
+  description={SITE.description}
+  path="/"
+  jsonLd={jsonLd}
+>
+  <!-- Hero：主词 H1 + 游戏元信息徽章 + 双 CTA -->
+  <section class:list={['hero', SITE.theme.heroAlign]}>
+    <p class="kicker">{g.developer} · {g.releaseStage}</p>
+    <h1>{SITE.gameName} Guide &amp; Codes</h1>
+    <p>{SITE.description}</p>
+    <div class="chips">
+      <span class="chip"><strong>{g.releaseDate}</strong> Release</span>
+      <span class="chip"><strong>{g.price}</strong></span>
+      <span class="chip"><strong>{g.reviewSummary}</strong> on Steam</span>
+      <span class="chip"><strong>{g.players}</strong></span>
+    </div>
+    <div class="ctas">
+      <a class="cta" href={SITE.officialUrl} rel="nofollow noopener">{SITE.officialCtaLabel}</a>
+      <a class="cta ghost" href="/guides/beginner-guide/">Beginner Guide</a>
+    </div>
+  </section>
+
+  <!-- What is + Quick Facts -->
+  <section>
+    <h2>What is {SITE.gameName}?</h2>
+    <p>
+      {SITE.gameName} is a {g.genre.toLowerCase()} by {g.developer}, available on {g.platforms}.
+      This site tracks everything players search for — guides, codes, tier lists, server status and
+      player stats — updated as the game evolves.
+    </p>
+    <div class="card">
+      <table>
+        <tbody>
+          <tr><th>Developer</th><td>{g.developer}</td><th>Genre</th><td>{g.genre}</td></tr>
+          <tr><th>Platform</th><td>{g.platforms}</td><th>Players</th><td>{g.players}</td></tr>
+          <tr><th>Price</th><td>{g.price}</td><th>Reviews</th><td>{g.reviewSummary}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 攻略区 -->
+  <section>
+    <h2>Guides</h2>
+    <div class="grid">
+      {
+        guides.map((gd) => (
+          <a class="card tile" href={`/guides/${gd.id}/`}>
+            <h3>{gd.data.title}</h3>
+            <p>{gd.data.description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- 工具与实时数据区（对冲 AI Overviews 的核心页型入口）-->
+  <section>
+    <h2>Tools &amp; Live Data</h2>
+    <div class="grid">
+      {
+        SITE.tools.map((t) => (
+          <a class="card tile" href={t.href}>
+            <span class="tag">{t.tag}</span>
+            <h3>{t.title}</h3>
+            <p>{t.desc}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- 新闻区 -->
+  <section>
+    <h2>Latest News</h2>
+    <ul class="news">
+      {
+        news.map((n) => (
+          <li>
+            <span class="date">{n.date}</span> {n.text}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- FAQ 预览（前 3 条，完整版在 /faq/）-->
+  <FaqSection faqs={faqs.slice(0, 3)} />
+  <p><a href="/faq/">See the full FAQ →</a></p>
+
+  <section class="card">
+    <h2>About This Site</h2>
+    <p>
+      {SITE.siteName} is an independent fan resource for {SITE.gameName} players. We track updates,
+      test codes and write practical guides so you can spend less time searching and more time
+      playing.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+  .hero.center {
+    text-align: center;
+  }
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+    margin: 0.25rem 0 0.5rem;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .hero.center .chips,
+  .hero.center .ctas {
+    justify-content: center;
+  }
+  .chip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .ctas {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 0.6rem 1.1rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .cta:hover {
+    background: var(--primary-strong);
+  }
+  .cta.ghost {
+    background: transparent;
+    color: var(--primary-strong);
+    border: 1px solid var(--primary);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .tile {
+    text-decoration: none;
+    color: var(--text);
+  }
+  .tile h3 {
+    margin: 0.25rem 0;
+    color: var(--primary-strong);
+  }
+  .tile p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+  }
+  .news {
+    list-style: none;
+    padding: 0;
+  }
+  .news li {
+    margin-bottom: 0.5rem;
+  }
+  .news .date {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.5rem;
+  }
+</style>

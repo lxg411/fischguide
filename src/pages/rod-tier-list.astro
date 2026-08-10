@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import data from '../data/rods.json';
+
+const month = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+const title = `Fisch Rod Tier List — All 248 Rods Ranked (${month})`;
+
+const pct = (s: string) => {
+  const m = /^(-?\d+(?:\.\d+)?)%$/.exec(s);
+  return m ? parseFloat(m[1]) : null;
+};
+// stat-based打分:luck 主导(值猎人视角),lure 次之——口径在页面明示,不冒充社区共识
+const score = (r: (typeof data.rods)[number]) => (pct(r.luck) ?? 0) + (pct(r.lure) ?? 0) * 0.4;
+const ranked = [...data.rods].sort((a, b) => score(b) - score(a));
+const bands = [
+  { tier: 'S', rows: ranked.slice(0, 15) },
+  { tier: 'A', rows: ranked.slice(15, 45) },
+  { tier: 'B', rows: ranked.slice(45, 95) },
+  { tier: 'C', rows: ranked.slice(95, 160) },
+  { tier: 'D', rows: ranked.slice(160) },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Fisch Rod Tier List',
+  itemListElement: ranked
+    .slice(0, 30)
+    .map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name })),
+};
+---
+
+<BaseLayout
+  title={title}
+  description={`Complete Fisch rod tier list for ${month}: all 248 rods with lure, luck, control and how to get them — stat-ranked for value hunting in the THE DEEP era.`}
+  path="/rod-tier-list/"
+>
+  <h1>{title}</h1>
+  <p class="meta">Last updated: <strong>{data.updated}</strong> · version: {data.version}</p>
+  <p>
+    Every rod in Fisch, ranked. This is a <strong>stat-based ranking</strong> — we weight luck
+    first (it drives mutation and rare-fish odds, which is where the money is) and lure speed
+    second, using the full stat table below. Your best pick still depends on your progression
+    stage: a Stage 3 player can't use a Stage 10 rod, so treat tiers within your stage bracket.
+  </p>
+  <p class="unit-note">{data.source}</p>
+
+  {
+    bands.map((band) => (
+      <section class="tier-band">
+        <h2>Tier {band.tier} ({band.rows.length} rods)</h2>
+        <div class="card table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Rod</th>
+                <th>Luck</th>
+                <th>Lure</th>
+                <th>Control</th>
+                <th>Stage</th>
+                <th>How to get</th>
+              </tr>
+            </thead>
+            <tbody>
+              {band.rows.map((e) => (
+                <tr>
+                  <td><strong>{e.name}</strong></td>
+                  <td>{e.luck}</td>
+                  <td>{e.lure}</td>
+                  <td>{e.control}</td>
+                  <td>{e.stage}</td>
+                  <td class="src">{e.source}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))
+  }
+
+  <p>
+    Got a rod that boosts mutation chance? Pair it with the
+    <a href="/mutations/">mutation multiplier table</a> to plan your value hunting, and check what
+    your catches trade for on the <a href="/values/">value list</a>.
+  </p>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</BaseLayout>
+
+<style>
+  .meta {
+    color: var(--muted);
+  }
+  .unit-note {
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-left: 3px solid var(--primary);
+    padding-left: 0.75rem;
+  }
+  .tier-band {
+    margin-bottom: 1.75rem;
+  }
+  .table-scroll {
+    overflow-x: auto;
+  }
+  .src {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>

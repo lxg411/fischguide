@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description={`Privacy policy for ${SITE.siteName}: what data we collect and how it is used.`}
+  path="/privacy/"
+>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: 2026-07-22</p>
+
+  <h2>Analytics</h2>
+  <p>
+    We use analytics tools (such as Google Analytics and Microsoft Clarity) to understand how
+    visitors use this site — for example, which pages are popular. These tools may use cookies and
+    collect anonymized usage data such as pages visited, approximate location, browser and device
+    type.
+  </p>
+
+  <h2>Advertising</h2>
+  <p>
+    This site may display ads served by third-party advertising networks. These networks may use
+    cookies to show ads relevant to you. We do not sell personal information.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy? Reach us via the <a href="/contact/">contact page</a>.
+  </p>
+</BaseLayout>

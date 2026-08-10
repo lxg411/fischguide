@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FaqSection from '../components/FaqSection.astro';
+import { SITE } from '../config/site';
+import faqs from '../data/faq.json';
+
+const title = `${SITE.gameName} FAQ`;
+---
+
+<BaseLayout
+  title={title}
+  description={`Every common ${SITE.gameName} question answered: price, solo play, crossplay, servers, release plans and more.`}
+  path="/faq/"
+>
+  <h1>{title}</h1>
+  <FaqSection faqs={faqs} heading="All Questions" />
+  <p>
+    Still stuck? Try the <a href="/guides/">guides</a> or <a href="/contact/">contact us</a>.
+  </p>
+</BaseLayout>

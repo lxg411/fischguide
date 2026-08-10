@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FaqSection from '../components/FaqSection.astro';
+import { SITE } from '../config/site';
+import status from '../data/server-status.json';
+
+// TODO(Stage 3): 接入真实状态源（官方 Discord/Steam API 轮询），
+// 用客户端 fetch 一个边缘函数替代静态 JSON。
+const title = `${SITE.gameName} Server Status — Are Servers Down?`;
+const checked = new Date().toISOString().slice(0, 10);
+
+const faqs = [
+  {
+    q: `How do I check if ${SITE.gameName} servers are down?`,
+    a: 'This page tracks current status and recent incidents. You can also check the official Discord status channel.',
+  },
+  {
+    q: 'Why can I not log in even when servers are up?',
+    a: 'Peak-hour queues and regional issues can block login while servers stay online. Try the fixes listed above.',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={`Live ${SITE.gameName} server status: current state, outage history and login fixes, checked ${checked}.`}
+  path="/server-status/"
+>
+  <h1>{title}</h1>
+
+  <div class:list={['card', 'status', status.status]}>
+    <span class="dot"></span>
+    <div>
+      <strong>{status.statusLabel}</strong>
+      <p>{status.note} <span class="meta">(checked {checked})</span></p>
+    </div>
+  </div>
+
+  <h2>Quick Fixes for Login Issues</h2>
+  <ol>
+    {status.fixes.map((f) => <li>{f}</li>)}
+  </ol>
+
+  <h2>Recent Incidents</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>Date</th><th>Incident</th></tr></thead>
+      <tbody>
+        {
+          status.incidents.map((i) => (
+            <tr>
+              <td>{i.date}</td>
+              <td>{i.note}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <FaqSection faqs={faqs} heading="Server FAQ" />
+</BaseLayout>
+
+<style>
+  .status {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin: 1rem 0;
+  }
+  .status p {
+    margin: 0.25rem 0 0;
+  }
+  .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    margin-top: 0.35rem;
+    background: oklch(0.65 0.18 145);
+    flex-shrink: 0;
+  }
+  .status.degraded .dot {
+    background: oklch(0.7 0.15 80);
+  }
+  .status.down .dot {
+    background: oklch(0.6 0.2 25);
+  }
+  .meta {
+    color: var(--muted);
+  }
+</style>

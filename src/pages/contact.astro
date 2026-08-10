@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+---
+
+<BaseLayout
+  title="Contact Us"
+  description={`Contact the ${SITE.siteName} team with corrections, code submissions or feedback.`}
+  path="/contact/"
+>
+  <h1>Contact Us</h1>
+  <p>Found an expired code, an outdated guide, or just want to say hi?</p>
+  <p class="card">
+    Email: <strong>contact@example.com</strong>
+    <!-- 上线前替换为该域名的真实邮箱（如 Cloudflare Email Routing 转发地址） -->
+  </p>
+  <p>We usually reply within 2–3 days.</p>
+</BaseLayout>

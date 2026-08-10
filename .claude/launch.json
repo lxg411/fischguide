@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "fischguide",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "astro",
+        "preview",
+        "--port",
+        "4331"
+      ],
+      "port": 4331,
+      "cwd": "/Users/lxg/Desktop/sites/fischguide"
+    }
+  ]
+}

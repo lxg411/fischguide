@@ -1,0 +1,26 @@
+{
+  "subject": "Classes",
+  "updated": "2026-07-22",
+  "intro": "Rankings based on solo clear speed, co-op value and current patch balance.",
+  "tiers": [
+    {
+      "tier": "S",
+      "entries": [
+        { "name": "Ranger", "role": "Ranged DPS", "note": "High mobility and burst at range; the best solo class this patch." }
+      ]
+    },
+    {
+      "tier": "A",
+      "entries": [
+        { "name": "Warrior", "role": "Tank-DPS", "note": "Forgiving bruiser with strong stagger and self-sustain." },
+        { "name": "Mage", "role": "AoE Caster", "note": "Highest damage ceiling but squishy; shines in groups." }
+      ]
+    },
+    {
+      "tier": "B",
+      "entries": [
+        { "name": "Mystic", "role": "Support", "note": "Great in co-op, workable solo with the right weapon." }
+      ]
+    }
+  ]
+}

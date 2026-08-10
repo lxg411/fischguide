@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+---
+
+<BaseLayout
+  title="About"
+  description={`About ${SITE.siteName}: who we are and how we keep our ${SITE.gameName} guides accurate.`}
+  path="/about/"
+>
+  <h1>About {SITE.siteName}</h1>
+  <p>
+    {SITE.siteName} is an independent, player-run resource for {SITE.gameName}. We play the game,
+    test every code before listing it, and update guides when patches change the meta.
+  </p>
+  <p>
+    This site is not affiliated with, endorsed by, or sponsored by the developers or publishers of
+    {SITE.gameName}. All trademarks belong to their respective owners.
+  </p>
+  <h2>Editorial Policy</h2>
+  <p>
+    Every guide is reviewed for accuracy against the current game version. If you spot an error,
+    please <a href="/contact/">contact us</a> and we will fix it.
+  </p>
+</BaseLayout>

@@ -1,0 +1,74 @@
+---
+/**
+ * 兑换码表格：codes 页核心组件（AI Overviews 难以替代的实时维护型内容）。
+ * 数据来源 src/data/codes.json，"last checked" 日期随每次构建自动更新。
+ */
+interface Code {
+  code: string;
+  reward: string;
+  status: 'active' | 'expired';
+}
+interface Props {
+  codes: Code[];
+}
+const { codes } = Astro.props;
+const active = codes.filter((c) => c.status === 'active');
+const expired = codes.filter((c) => c.status === 'expired');
+const lastChecked = new Date().toISOString().slice(0, 10);
+---
+
+<p class="checked">Last checked: <strong>{lastChecked}</strong> — {active.length} active codes.</p>
+
+<h2>Active Codes</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>Code</th><th>Reward</th></tr></thead>
+    <tbody>
+      {
+        active.map((c) => (
+          <tr>
+            <td><code>{c.code}</code></td>
+            <td>{c.reward}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+{
+  expired.length > 0 && (
+    <>
+      <h2>Expired Codes</h2>
+      <div class="card muted">
+        <table>
+          <tbody>
+            {expired.map((c) => (
+              <tr>
+                <td>
+                  <code>{c.code}</code>
+                </td>
+                <td>{c.reward}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )
+}
+
+<style>
+  .checked {
+    color: var(--muted);
+  }
+  .muted {
+    opacity: 0.7;
+  }
+  code {
+    background: var(--bg);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+</style>

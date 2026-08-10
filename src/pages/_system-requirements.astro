@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+import specs from '../data/system-requirements.json';
+
+const title = `${SITE.gameName} System Requirements`;
+const min = specs.minimum as Record<string, string>;
+const rec = specs.recommended as Record<string, string>;
+const rows = Object.keys(min);
+---
+
+<BaseLayout
+  title={title}
+  description={`Can your PC run ${SITE.gameName}? Minimum and recommended system requirements, plus Steam Deck notes.`}
+  path="/system-requirements/"
+>
+  <h1>{title}</h1>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th></th><th>Minimum</th><th>Recommended</th></tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((k) => (
+            <tr>
+              <th>{k}</th>
+              <td>{min[k]}</td>
+              <td>{rec[k]}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Steam Deck</h2>
+  <p>{specs.notes}</p>
+
+  <p>
+    Specs check out? Grab the game via the official page, then start with the
+    <a href="/guides/beginner-guide/">beginner guide</a>.
+  </p>
+</BaseLayout>

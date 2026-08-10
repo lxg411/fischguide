@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+import stats from '../data/player-stats.json';
+
+// TODO(Stage 3): 用定时任务每日拉 Steam API 玩家数写回 JSON 并触发重建。
+const title = `${SITE.gameName} Player Count & Steam Charts`;
+
+// 7 日趋势迷你折线图（构建期生成的内联 SVG，零 JS）
+const W = 560;
+const H = 120;
+const values = stats.trend.map((t) => t.players);
+const max = Math.max(...values);
+const min = Math.min(...values);
+const pts = values
+  .map((v, i) => {
+    const x = (i / (values.length - 1)) * (W - 20) + 10;
+    const y = H - 15 - ((v - min) / (max - min || 1)) * (H - 40);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  })
+  .join(' ');
+---
+
+<BaseLayout
+  title={title}
+  description={`How many people play ${SITE.gameName}? Current player count, 24-hour peak and 7-day trend, updated ${stats.updated}.`}
+  path="/player-count/"
+>
+  <h1>{title}</h1>
+  <p class="meta">Data updated: <strong>{stats.updated}</strong></p>
+
+  <div class="stats">
+    <div class="card stat"><span>Current</span><strong>{stats.current.toLocaleString()}</strong></div>
+    <div class="card stat"><span>24h Peak</span><strong>{stats.peak24h.toLocaleString()}</strong></div>
+    <div class="card stat"><span>7d Peak</span><strong>{stats.peak7d.toLocaleString()}</strong></div>
+    <div class="card stat">
+      <span>All-Time Peak</span><strong>{stats.allTimePeak.toLocaleString()}</strong>
+    </div>
+  </div>
+
+  <h2>7-Day Trend</h2>
+  <div class="card">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="7-day player count trend">
+      <polyline points={pts} fill="none" stroke="var(--primary)" stroke-width="2.5"></polyline>
+    </svg>
+    <table>
+      <thead><tr><th>Date</th><th>Peak Players</th></tr></thead>
+      <tbody>
+        {
+          stats.trend.map((t) => (
+            <tr>
+              <td>{t.date}</td>
+              <td>{t.players.toLocaleString()}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Wondering if it is worth jumping in at this player count? Read our
+    <a href="/review/">full review</a>.
+  </p>
+</BaseLayout>
+
+<style>
+  .meta {
+    color: var(--muted);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .stat strong {
+    font-size: 1.4rem;
+  }
+  svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+</style>

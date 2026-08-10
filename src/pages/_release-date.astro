@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FaqSection from '../components/FaqSection.astro';
+import { SITE } from '../config/site';
+import roadmap from '../data/roadmap.json';
+
+const title = `${SITE.gameName} Release Date & Roadmap`;
+const g = SITE.game;
+
+const faqs = [
+  {
+    q: `When did ${SITE.gameName} come out?`,
+    a: `${SITE.gameName} entered ${g.releaseStage} on ${g.releaseDate}.`,
+  },
+  {
+    q: `When is the ${SITE.gameName} 1.0 full release?`,
+    a: 'The developers plan roughly one year of Early Access, putting the full release around mid-2027.',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={`${SITE.gameName} release date, Early Access timeline and what is coming next on the roadmap.`}
+  path="/release-date/"
+>
+  <h1>{title}</h1>
+
+  <div class="card">
+    <table>
+      <tbody>
+        <tr><th>Release Date</th><td>{g.releaseDate}</td></tr>
+        <tr><th>Stage</th><td>{g.releaseStage}</td></tr>
+        <tr><th>Price</th><td>{g.price}</td></tr>
+        <tr><th>Platforms</th><td>{g.platforms}</td></tr>
+        <tr><th>Developer</th><td>{g.developer}</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What's Next</h2>
+  <p>Full details on the <a href="/roadmap/">roadmap page</a>. Highlights:</p>
+  <ul>
+    {roadmap.slice(1).map((r) => <li><strong>{r.period}:</strong> {r.items.join(', ')}</li>)}
+  </ul>
+
+  <FaqSection faqs={faqs} heading="Release FAQ" />
+</BaseLayout>

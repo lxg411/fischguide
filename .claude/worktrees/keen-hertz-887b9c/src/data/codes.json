@@ -1,0 +1,5 @@
+[
+  { "code": "WELCOME2026", "reward": "500 coins", "status": "active" },
+  { "code": "SAMPLEGIFT", "reward": "Starter pack (weapon + 3 potions)", "status": "active" },
+  { "code": "LAUNCHWEEK", "reward": "200 gems", "status": "expired" }
+]

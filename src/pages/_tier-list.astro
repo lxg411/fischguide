@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TierList from '../components/TierList.astro';
+import { SITE } from '../config/site';
+import data from '../data/tier-list.json';
+
+const title = `${SITE.gameName} Class Tier List (${new Date().getFullYear()})`;
+---
+
+<BaseLayout
+  title={title}
+  description={`${SITE.gameName} tier list: every class ranked S/A/B for solo and co-op play, updated for the current patch.`}
+  path="/tier-list/"
+>
+  <h1>{title}</h1>
+  <TierList {...data} />
+  <p>
+    Building one of these classes? Start with the <a href="/guides/beginner-guide/">beginner guide</a>
+    and grab free rewards on the <a href="/codes/">codes page</a>.
+  </p>
+</BaseLayout>

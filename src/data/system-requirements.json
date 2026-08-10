@@ -1,0 +1,17 @@
+{
+  "minimum": {
+    "OS": "Windows 10 64-bit",
+    "Processor": "Intel Core i5-8400 / AMD Ryzen 5 2600",
+    "Memory": "8 GB RAM",
+    "Graphics": "NVIDIA GTX 1060 / AMD RX 580",
+    "Storage": "15 GB available space"
+  },
+  "recommended": {
+    "OS": "Windows 11 64-bit",
+    "Processor": "Intel Core i5-12400 / AMD Ryzen 5 5600",
+    "Memory": "16 GB RAM",
+    "Graphics": "NVIDIA RTX 3060 / AMD RX 6600 XT",
+    "Storage": "15 GB SSD"
+  },
+  "notes": "Steam Deck: playable at 40 FPS on medium settings; Verified status pending."
+}

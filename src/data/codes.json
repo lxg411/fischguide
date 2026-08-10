@@ -1,0 +1,31 @@
+[
+  {
+    "code": "SCARLET",
+    "reward": "Scarlet skin for Nate's Blade",
+    "status": "active",
+    "note": "Long-term code — official wiki lists expiry December 15, 2026"
+  },
+  {
+    "code": "TemporarySubmarine",
+    "reward": "Submarine cosmetic parts (fins, panels, top, windows)",
+    "status": "active",
+    "note": "Long-term code — expires October 18, 2026"
+  },
+  {
+    "code": "CARBON",
+    "reward": "Carbon skin",
+    "status": "active",
+    "note": "No listed expiry — the only permanent code right now"
+  },
+  {
+    "code": "TheDeepIsVeryDeep",
+    "reward": "1,000 C$, Cleaned Scrap-Bot, event food ×20, random totem or whistle",
+    "status": "expired",
+    "note": "THE DEEP launch flash code — live August 8-9 only (Level 25+ required)"
+  },
+  { "code": "HarpoonGunsAreAwesome", "reward": "1,000 C$, Chaotic Crasher, event food, random totem", "status": "expired" },
+  { "code": "SorryForShopShenanigans", "reward": "150 S$, Rainbow Totem", "status": "expired" },
+  { "code": "HarpoonGunsNextWeek", "reward": "1,000 C$, Grandpa Horseshoe Crab, event food, random totem", "status": "expired" },
+  { "code": "Sorry4Delay", "reward": "1,000 C$, Shiny Terroscuttler, 🎣 title, random totem", "status": "expired" },
+  { "code": "RoamingFishAndWaterPark", "reward": "1,000 C$, Shiny Dumbo Octopus Floatie, event food, random totem", "status": "expired" }
+]

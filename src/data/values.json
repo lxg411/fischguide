@@ -1,0 +1,53 @@
+{
+  "updated": "2026-08-10",
+  "unitNote": "Values are in S$ (Second Sea currency) unless marked Proto (point-based). Fisch trading runs on three community value systems — the Proto spreadsheet, the TrueVal Discord list and Trade Hub market data — and the same item can differ 30%+ between them. We cross-check all three weekly and band the spread; when systems disagree hard, we say so instead of averaging it away.",
+  "intro": "The Fisch trading value list below covers the boats, rod skins and limited cosmetics that dominate high-end trading in the THE DEEP era. Use it to sanity-check a trade before you accept — and always confirm which value system your trade partner is quoting, because 'it's worth 5M' means nothing without knowing whose list that number came from.",
+  "categories": [
+    {
+      "name": "Top-Tier Boats & Cosmetics",
+      "note": "The heavy hitters. Thin supply and collector demand — single trades can move these numbers week to week.",
+      "items": [
+        { "name": "Puff of Heaven", "value": "Proto 7,200 (no S$ consensus yet)", "demand": 8, "how": "Limited cosmetic; trading only — newest top-tier entry, systems still converging" },
+        { "name": "Cthulu's Revenge", "value": "S$ 20M–25M (disputed)", "demand": 8, "how": "Limited boat; Trade Hub ~24M, other systems have no stable quote yet" },
+        { "name": "Evangeline", "value": "S$ 7.2M–10.8M", "demand": 9, "how": "Limited boat; TrueVal 10.8M vs Trade Hub 7.2M — quote the system when trading" },
+        { "name": "Nocturne", "value": "S$ 7.1M–9.5M", "demand": 9, "how": "Limited boat; stable across systems" },
+        { "name": "Curse IV", "value": "S$ 6.6M–8.8M", "demand": 8, "how": "Limited boat; stable" },
+        { "name": "Cyanic Demonride", "value": "S$ 5.5M–7.5M", "demand": 8, "how": "Limited boat; stable" },
+        { "name": "Scarwing", "value": "S$ 4.9M–7M", "demand": 8, "how": "Limited glider; stable" }
+      ]
+    },
+    {
+      "name": "High Tier",
+      "note": "Strong demand, mostly stable pricing. The workhorse bracket of serious Fisch trading.",
+      "items": [
+        { "name": "Heavyblade of Glory", "value": "S$ 3.0M–4.5M", "demand": 7, "how": "Limited cosmetic; stable" },
+        { "name": "Black Comet", "value": "S$ 3.0M–4.2M", "demand": 6, "how": "Limited; hoarded — few sellers, price can spike" },
+        { "name": "Malevolence", "value": "S$ 2.3M–3.5M", "demand": 6, "how": "Limited; flagged as manipulated in community lists — extra caution" },
+        { "name": "Slime Trade Booth", "value": "S$ 2.2M–4M", "demand": 6, "how": "Limited booth; hoarded, wide spread between systems" },
+        { "name": "The Reaper", "value": "S$ 2.3M–3.4M", "demand": 6, "how": "Limited cosmetic; stable" },
+        { "name": "Demonwake", "value": "S$ 2.1M–2.8M", "demand": 7, "how": "Limited boat; unstable — re-check before big trades" },
+        { "name": "Fuchsia Fidelity", "value": "S$ 1.8M–3.0M", "demand": 7, "how": "Limited; stable" },
+        { "name": "Platinum Menace", "value": "S$ 1.8M–2.6M", "demand": 7, "how": "Limited; stable" }
+      ]
+    },
+    {
+      "name": "Mid Tier",
+      "note": "Liquid bracket — plenty of copies moving, good for building up toward a top-tier target.",
+      "items": [
+        { "name": "Final Census", "value": "S$ 1.4M–2.1M", "demand": 6, "how": "Limited; stable" },
+        { "name": "Elysian Jolt", "value": "S$ 2.0M–2.5M", "demand": 5, "how": "Limited; hoarded" },
+        { "name": "Violet Viper", "value": "S$ 1.6M–2.1M", "demand": 5, "how": "Limited; unstable" }
+      ]
+    },
+    {
+      "name": "Mutated & Limited Fish",
+      "note": "Fish value = base sell price × mutation multiplier, with attributes stacking on top. For the full 325-mutation multiplier table see our Mutations page — a Nessie-class rare with an Aether (12×) roll is a different asset class from the same fish clean.",
+      "items": [
+        { "name": "Nessie (clean)", "value": "Community anchor ~280 pts on Traderie", "demand": 7, "how": "Rare catch; the benchmark limited fish" },
+        { "name": "Ancient Megalodon / Spectral Serpent", "value": "~35 pts", "demand": 5, "how": "Rare catches; trading only" },
+        { "name": "Ghoulfish", "value": "~30 pts", "demand": 5, "how": "Event fish" },
+        { "name": "Whale Shark / Megalodon", "value": "~25 pts", "demand": 4, "how": "Rare catches" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+/* 主题变量由 BaseLayout 按 src/config/site.ts 注入 --hue / --accent-hue / --radius */
+:root {
+  --bg: oklch(0.98 0.005 var(--hue));
+  --surface: oklch(1 0 0);
+  --text: oklch(0.25 0.02 var(--hue));
+  --muted: oklch(0.5 0.02 var(--hue));
+  --primary: oklch(0.55 0.18 var(--hue));
+  --primary-strong: oklch(0.45 0.2 var(--hue));
+  --accent: oklch(0.52 0.15 var(--accent-hue)); /* 2026-07-30 对比度修正：0.7 亮度做正文色 WCAG 不达标（TSB 站 Lighthouse 实测 2.8） */
+  --border: oklch(0.9 0.01 var(--hue));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: oklch(0.18 0.015 var(--hue));
+    --surface: oklch(0.23 0.02 var(--hue));
+    --text: oklch(0.93 0.01 var(--hue));
+    --muted: oklch(0.7 0.02 var(--hue));
+    --border: oklch(0.32 0.02 var(--hue));
+    --primary: oklch(0.7 0.15 var(--hue));
+    --primary-strong: oklch(0.78 0.14 var(--hue));
+    --accent: oklch(0.75 0.15 var(--accent-hue)); /* 暗色底提亮，配对 0.52 的亮色修正 */
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--primary-strong);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}

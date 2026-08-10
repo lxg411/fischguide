@@ -1,0 +1,79 @@
+---
+import { SITE } from '../config/site';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/theme.css';
+
+interface Props {
+  /** 页面 title（不带站名后缀，布局会自动拼接） */
+  title: string;
+  description: string;
+  /** 规范化路径，如 "/guides/beginner-guide/"，用于 canonical 和 OG */
+  path: string;
+  /** JSON-LD 对象数组，逐个输出 <script type="application/ld+json"> */
+  jsonLd?: object[];
+  /** 页面配图路径（如 "/images/xxx.png"），覆盖 SITE.ogImage；Discover 大图卡要 ≥1200px 宽 */
+  image?: string;
+}
+
+const { title, description, path, jsonLd = [], image } = Astro.props;
+const canonical = new URL(path, Astro.site).href;
+const fullTitle = `${title} | ${SITE.siteName}`;
+const ogImage = image ?? SITE.ogImage;
+const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).href : null;
+---
+
+<html lang={SITE.language}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <!-- Discover 就绪（2026-07-30 调研落地）：不设 large 谷歌不给 Discover 出大图卡 -->
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.siteName} href="/rss.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={SITE.siteName} />
+    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+    {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+
+    <style
+      set:html={`:root{--hue:${SITE.theme.hue};--accent-hue:${SITE.theme.accentHue};--radius:${SITE.theme.radius};}`}
+    />
+
+    {jsonLd.map((obj) => <script type="application/ld+json" set:html={JSON.stringify(obj)} />)}
+
+    {
+      SITE.gaId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`} />
+          <script
+            set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${SITE.gaId}');`}
+          />
+        </>
+      )
+    }
+    {
+      SITE.clarityId && (
+        <script
+          set:html={`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${SITE.clarityId}");`}
+        />
+      )
+    }
+  </head>
+  <body>
+    <Nav />
+    <main class="container">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

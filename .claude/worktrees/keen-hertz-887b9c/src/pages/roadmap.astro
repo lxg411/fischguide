@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+import roadmap from '../data/roadmap.json';
+
+const title = `${SITE.gameName} Roadmap (${new Date().getFullYear()})`;
+---
+
+<BaseLayout
+  title={title}
+  description={`The full ${SITE.gameName} content roadmap: every planned update, new region, class and feature by quarter.`}
+  path="/roadmap/"
+>
+  <h1>{title}</h1>
+  <p>Everything the developers have announced, in chronological order.</p>
+
+  {
+    roadmap.map((r) => (
+      <section class="card phase">
+        <h2>{r.period}</h2>
+        <ul>
+          {r.items.map((i) => (
+            <li>{i}</li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <p>
+    Want launch-state details instead? See the <a href="/release-date/">release date page</a>.
+  </p>
+</BaseLayout>
+
+<style>
+  .phase {
+    margin-bottom: 1rem;
+  }
+  .phase h2 {
+    margin-top: 0;
+  }
+</style>

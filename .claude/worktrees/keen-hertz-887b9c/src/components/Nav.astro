@@ -1,0 +1,47 @@
+---
+import { SITE } from '../config/site';
+---
+
+<header>
+  <nav class="container">
+    <a class="brand" href="/">{SITE.siteName}</a>
+    <div class="links">
+      {SITE.nav.map((l) => <a href={l.href}>{l.label}</a>)}
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .brand {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text);
+    white-space: nowrap;
+  }
+  .links {
+    display: flex;
+    gap: 0.4rem 1rem;
+    flex-wrap: wrap;
+  }
+  .links a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .links a:hover {
+    color: var(--primary-strong);
+  }
+</style>

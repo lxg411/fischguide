@@ -1,0 +1,15 @@
+{
+  "status": "operational",
+  "statusLabel": "All systems operational",
+  "note": "No ongoing outage reported. Peak-hour queues may still appear on busy servers.",
+  "incidents": [
+    { "date": "2026-07-10", "note": "45-minute login outage after patch 0.3.2, resolved with hotfix." },
+    { "date": "2026-05-07", "note": "Launch-day queues up to 20 minutes during EU evening peak." }
+  ],
+  "fixes": [
+    "Restart Steam and verify game files",
+    "Check the official Discord #status channel for maintenance windows",
+    "If stuck at 'Connecting…', switch server region in Settings → Network",
+    "Flush DNS (ipconfig /flushdns) if others can connect and you cannot"
+  ]
+}

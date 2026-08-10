@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../config/site';
+
+const guides = await getCollection('guides');
+---
+
+<BaseLayout
+  title={`${SITE.gameName} Guides`}
+  description={`All ${SITE.gameName} guides: walkthroughs, tips and strategies, kept up to date.`}
+  path="/guides/"
+>
+  <h1>{SITE.gameName} Guides</h1>
+  <ul>
+    {
+      guides.map((g) => (
+        <li>
+          <a href={`/guides/${g.id}/`}>{g.data.title}</a>
+          <p>{g.data.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

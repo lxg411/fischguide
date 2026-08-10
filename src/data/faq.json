@@ -1,0 +1,42 @@
+[
+  {
+    "q": "What is Fisch on Roblox?",
+    "a": "Fisch is a fishing adventure game on Roblox by Fisch Studios, launched in March 2024. You catch fish with 400,000+ possible variations (mutations × attributes), explore new seas as updates land, and trade limited cosmetics with other players. As of August 2026 it runs the THE DEEP update with around 45,000 concurrent players and over 4.7 billion total visits."
+  },
+  {
+    "q": "Is this site about the German word 'Fisch'?",
+    "a": "No — 'Fisch' here is the Roblox fishing game, not the German word for fish. If you searched 'fisch values', 'fisch codes' or 'fisch rod tier list', you're in the right place."
+  },
+  {
+    "q": "How do Fisch trading values actually work?",
+    "a": "There is no single official value list. The community runs three parallel systems: the Proto spreadsheet (point-based), the TrueVal Discord list and Trade Hub market data (both S$-denominated). The same boat can differ 30% or more between systems, so always confirm which list a number comes from. Our value list cross-checks all three weekly and shows the spread as a range."
+  },
+  {
+    "q": "What's the most valuable mutation in Fisch?",
+    "a": "Aether at 12× sell value, followed by Fury (11.7×) and Hades' Curse (11.1×). A fish carries one mutation at a time, but attributes like Shiny and Sparkling stack on top of the mutation multiplier — see our Mutations page for all 325 multipliers."
+  },
+  {
+    "q": "Why do Fisch codes expire so fast?",
+    "a": "Fisch uses a flash-code pattern: most codes drop with weekly updates and expire within 24-48 hours (sometimes same-day). Only a few long-term codes stay live for months. If you keep missing them, check codes right after each weekly update lands — that's when new ones appear."
+  },
+  {
+    "q": "Where do I redeem Fisch codes?",
+    "a": "In-game, open the settings/menu and look for the code redemption field. Note that many flash codes carry a level requirement (often Level 25+), so brand-new accounts may not be able to claim them."
+  },
+  {
+    "q": "What is appraisal and is it worth it?",
+    "a": "Appraisal rerolls a fish's mutation and attributes for a fee. Attributes like Shiny and Sparkling can't be lost during appraisal, which makes stacking attributes on a high-multiplier mutation the main way to build extremely valuable fish. The Appraiser's Luck gamepass raises mutation odds."
+  },
+  {
+    "q": "Is Fisch free to play?",
+    "a": "Yes. Fisch is free on Roblox across PC, mobile and console. Gamepasses and Robux purchases exist (Appraiser's Luck, premium rods and cosmetics) but fishing, progression and trading are all accessible free."
+  },
+  {
+    "q": "What's the best rod in Fisch right now?",
+    "a": "By raw stats, late-stage rods like Astraeus Serenade (100% lure, 300% luck, Stage 10) top the table, while Tryhard Rod holds the highest luck stat at 399%. 'Best' depends on your progression stage though — our Rod Tier List ranks all 248 rods with full lure/luck/control stats so you can pick per stage."
+  },
+  {
+    "q": "How often is this site updated?",
+    "a": "Trading values are re-checked weekly against all three community systems. Codes are verified against the official wiki and multiple media lists after every game update. Rod and mutation data is refreshed when a major version (like THE DEEP) changes the tables."
+  }
+]

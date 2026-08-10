@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CodesTable from '../components/CodesTable.astro';
+import FaqSection from '../components/FaqSection.astro';
+import { SITE } from '../config/site';
+import codes from '../data/codes.json';
+
+const month = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+const title = `${SITE.gameName} Codes (${month})`;
+
+const faqs = [
+  {
+    q: `How do I redeem codes in ${SITE.gameName}?`,
+    a: 'Open the in-game settings menu, find the "Redeem Code" field, paste the code exactly as shown and confirm.',
+  },
+  {
+    q: 'Why is a code not working?',
+    a: 'Codes are case-sensitive and expire without notice. If an active code fails, restart the game and try again — or check back here, we update the list regularly.',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={`All working ${SITE.gameName} codes, tested and updated. Redeem them for free rewards before they expire.`}
+  path="/codes/"
+>
+  <h1>{title}</h1>
+  <p>
+    Working {SITE.gameName} codes, verified by hand. Bookmark this page — new codes are added as
+    soon as they drop.
+  </p>
+  <CodesTable codes={codes as any} />
+  <FaqSection faqs={faqs} heading="Code FAQ" />
+</BaseLayout>
