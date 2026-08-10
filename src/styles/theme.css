@@ -4,7 +4,7 @@
   --surface: oklch(1 0 0);
   --text: oklch(0.25 0.02 var(--hue));
   --muted: oklch(0.5 0.02 var(--hue));
-  --primary: oklch(0.55 0.18 var(--hue));
+  --primary: oklch(0.47 0.16 var(--hue));
   --primary-strong: oklch(0.45 0.2 var(--hue));
   --accent: oklch(0.52 0.15 var(--accent-hue)); /* 2026-07-30 对比度修正：0.7 亮度做正文色 WCAG 不达标（TSB 站 Lighthouse 实测 2.8） */
   --border: oklch(0.9 0.01 var(--hue));
