@@ -66,4 +66,14 @@ export const SITE = {
   // ===== 分析工具 =====
   gaId: import.meta.env.PUBLIC_GA_ID ?? 'G-FNSVMSHJRQ',
   clarityId: import.meta.env.PUBLIC_CLARITY_ID ?? '',
+
+  // ===== 变现（Adsterra 双位：Social Bar + Native Banner；禁 popunder，Adult 关）=====
+  // 申请 AdSense 前必须先删 socialBar 一行（全站下线悬浮条，页面干净送审）
+  adsterra: {
+    socialBar: 'https://pl30822130.effectivecpmnetwork.com/79/85/c0/7985c085d64ff2246b5fb1d57256ab29.js',
+    nativeBanner: {
+      script: 'https://pl30822129.effectivecpmnetwork.com/beee9a0ed1cb0f54ac84738d25995aac/invoke.js',
+      container: 'container-beee9a0ed1cb0f54ac84738d25995aac',
+    },
+  },
 } as const;

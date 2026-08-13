@@ -74,6 +74,19 @@ const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).href : null;
     <main class="container">
       <slot />
     </main>
+    {
+      SITE.adsterra?.nativeBanner && (
+        <div style="max-width: 72rem; margin: 2rem auto 0; padding: 0 1rem;">
+          <script is:inline data-cfasync="false" async src={SITE.adsterra.nativeBanner.script} />
+          <div id={SITE.adsterra.nativeBanner.container} />
+        </div>
+      )
+    }
     <Footer />
+    {
+      SITE.adsterra?.socialBar && (
+        <script is:inline data-cfasync="false" async src={SITE.adsterra.socialBar} />
+      )
+    }
   </body>
 </html>
