@@ -1,12 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FaqSection from '../components/FaqSection.astro';
 import { SITE } from '../config/site';
 import faqs from '../data/faq.json';
 import news from '../data/news.json';
 
-const guides = await getCollection('guides');
 const g = SITE.game;
 
 const jsonLd = [
@@ -34,57 +32,65 @@ const jsonLd = [
   description={SITE.description}
   path="/"
   jsonLd={jsonLd}
+  wide
 >
   <!-- Hero：主词 H1 + 游戏元信息徽章 + 双 CTA -->
   <section class:list={['hero', SITE.theme.heroAlign]}>
     <p class="kicker">{g.developer} · {g.releaseStage}</p>
     <h1>{SITE.gameName} Guide &amp; Codes</h1>
     <p>{SITE.description}</p>
-    <div class="chips">
-      <span class="chip"><strong>{g.releaseDate}</strong> Release</span>
-      <span class="chip"><strong>{g.price}</strong></span>
-      <span class="chip"><strong>{g.reviewSummary}</strong></span>
-      <span class="chip"><strong>{g.players}</strong></span>
-    </div>
     <div class="ctas">
       <a class="cta" href={SITE.officialUrl} rel="nofollow noopener">{SITE.officialCtaLabel}</a>
       <a class="cta ghost" href="/guides/beginner-guide/">Beginner Guide</a>
     </div>
   </section>
 
-  <!-- What is + Quick Facts -->
+  <!-- 事实小卡横排（hero 正下方） -->
+  <section class="facts-row">
+    <div class="fact-card"><span class="fact-label">Release</span><strong>March 13, 2024</strong></div>
+    <div class="fact-card"><span class="fact-label">Developer</span><strong>Fisch Studios</strong></div>
+    <div class="fact-card"><span class="fact-label">Genre</span><strong>Fishing Adventure / Trading</strong></div>
+    <div class="fact-card"><span class="fact-label">Players</span><strong>45,710 online (Aug 2026)</strong></div>
+    <div class="fact-card"><span class="fact-label">Price</span><strong>Free to Play</strong></div>
+  </section>
+
+  <!-- What is（高密度叙事段） -->
   <section>
     <h2>What is {SITE.gameName}?</h2>
     <p>
-      {SITE.gameName} is a {g.genre.toLowerCase()} by {g.developer}, available on {g.platforms}.
-      This site tracks what traders and anglers actually search for — live values, mutation
-      multipliers, rod rankings and working codes — updated as the game evolves.
+      <strong>Fisch</strong> turned Roblox fishing into a trading economy. Since <strong>March
+      2024</strong> it has passed <strong>4.75 billion visits</strong>, and the current <strong>THE
+      DEEP</strong> update pushed the ceiling further down. Three numbers decide what anything is worth:
+      the rod you are using (<strong>248</strong> of them), the mutation rolled on the catch
+      (<strong>325</strong> multipliers, from Aether at 12× down to Glitched at 0×), and what the
+      community will actually pay. This site tracks all three, and cross-checks the value systems against
+      each other weekly.
     </p>
-    <div class="card">
-      <table>
-        <tbody>
-          <tr><th>Developer</th><td>{g.developer}</td><th>Genre</th><td>{g.genre}</td></tr>
-          <tr><th>Platform</th><td>{g.platforms}</td><th>Players</th><td>{g.players}</td></tr>
-          <tr><th>Price</th><td>{g.price}</td><th>Reviews</th><td>{g.reviewSummary}</td></tr>
-        </tbody>
-      </table>
+  </section>
+
+  <!-- 官方截图廊（Roblox/Steam 官方素材，本地化压缩） -->
+  <section>
+    <h2>Fisch Screenshots</h2>
+    <div class="shots">
+      <figure><img src="/images/ss1.jpg" alt="Avatar relaxing in a deckchair with a parasol on a bright sand island" loading="lazy" decoding="async" width="900" height="506" /><figcaption>A quiet spot on the sand</figcaption></figure>
+      <figure><img src="/images/ss2.jpg" alt="Enormous whale surfacing with its mouth open beside a player in a rowboat" loading="lazy" decoding="async" width="900" height="506" /><figcaption>Something large surfacing next to the boat</figcaption></figure>
+      <figure><img src="/images/ss3.jpg" alt="Players and a pelican gathered at a wooden beach shop counter" loading="lazy" decoding="async" width="900" height="506" /><figcaption>The shop counter, and the pelican</figcaption></figure>
+      <figure><img src="/images/ss4.jpg" alt="Glowing purple whale in a cave lit by luminous mushrooms" loading="lazy" decoding="async" width="900" height="506" /><figcaption>A glowing catch in the mushroom caves</figcaption></figure>
     </div>
   </section>
 
-  <!-- 攻略区 -->
+  <!-- 分步区 -->
   <section>
-    <h2>Guides</h2>
-    <div class="grid">
-      {
-        guides.map((gd) => (
-          <a class="card tile" href={`/guides/${gd.id}/`}>
-            <h3>{gd.data.title}</h3>
-            <p>{gd.data.description}</p>
-          </a>
-        ))
-      }
-    </div>
+    <h2>From First Cast to First Trade</h2>
+    <ol class="steps">
+      <li><strong>Redeem before you cast.</strong> The <a href="/codes/">codes list</a> tracks the flash codes that die within 24 hours.</li>
+      <li><strong>Upgrade the rod before the bait.</strong> The <a href="/rod-tier-list/">rod tier list</a> ranks all 248 by stage, with lure, luck and control stats.</li>
+      <li><strong>Learn what a mutation is worth.</strong> The <a href="/mutations/">mutation table</a> ranks all 325 by sell multiplier.</li>
+      <li><strong>Price it before you trade it.</strong> The <a href="/values/">value list</a> cross-checks three community systems weekly.</li>
+      <li><strong>Learn WFL properly.</strong> The <a href="/guides/trading-guide/">trading guide</a> covers the scam patterns and why the value systems disagree.</li>
+    </ol>
   </section>
+
 
   <!-- 工具与实时数据区（对冲 AI Overviews 的核心页型入口）-->
   <section>
@@ -99,6 +105,41 @@ const jsonLd = [
           </a>
         ))
       }
+    </div>
+  </section>
+
+  <!-- 分类索引（内链密度：每链带一句描述） -->
+  <section>
+    <h2>Full Guide Index</h2>
+    <div class="index-grid">
+      <div class="card index-col">
+        <h3>Values & Trading</h3>
+        <ul>
+          <li><a href="/values/">Trading Value List</a> — Boats, rod skins and cosmetics — three systems cross-checked.</li>
+          <li><a href="/guides/trading-guide/">Trading Guide</a> — WFL basics, scam patterns and system differences.</li>
+        </ul>
+      </div>
+      <div class="card index-col">
+        <h3>Rods & Mutations</h3>
+        <ul>
+          <li><a href="/rod-tier-list/">Rod Tier List</a> — All 248 rods with lure, luck and control, ranked by stage.</li>
+          <li><a href="/mutations/">Mutation Multipliers</a> — All 325 mutations from Aether 12× to Glitched 0×.</li>
+        </ul>
+      </div>
+      <div class="card index-col">
+        <h3>Getting Started</h3>
+        <ul>
+          <li><a href="/guides/beginner-guide/">Beginner Guide</a> — First rod, first zone, first real catch.</li>
+          <li><a href="/faq/">FAQ</a> — Appraisal odds, THE DEEP, and what "Fisch" even means.</li>
+        </ul>
+      </div>
+      <div class="card index-col">
+        <h3>Codes & Site</h3>
+        <ul>
+          <li><a href="/codes/">Working Codes</a> — Active codes plus the flash-code schedule.</li>
+          <li><a href="/about/">About This Site</a> — How the weekly value cross-check works.</li>
+        </ul>
+      </div>
     </div>
   </section>
 

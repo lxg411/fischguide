@@ -14,9 +14,13 @@ interface Props {
   jsonLd?: object[];
   /** 页面配图路径（如 "/images/xxx.png"），覆盖 SITE.ogImage；Discover 大图卡要 ≥1200px 宽 */
   image?: string;
+  /** 宽容器（1120px）：数据表页型用（tier list/values/图鉴表）；手机端无感 */
+  wide?: boolean;
+  /** 攻略页两栏容器：桌面端正文+右侧栏（目录/相关页），窄屏自动塌单列 */
+  withRail?: boolean;
 }
 
-const { title, description, path, jsonLd = [], image } = Astro.props;
+const { title, description, path, jsonLd = [], image, wide = false, withRail = false } = Astro.props;
 const canonical = new URL(path, Astro.site).href;
 const fullTitle = `${title} | ${SITE.siteName}`;
 const ogImage = image ?? SITE.ogImage;
@@ -69,9 +73,9 @@ const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).href : null;
       )
     }
   </head>
-  <body>
+  <body class:list={[{ 'wide-page': wide || withRail }]}>
     <Nav />
-    <main class="container">
+    <main class:list={['container', { wide, 'with-rail': withRail }]}>
       <slot />
     </main>
     {

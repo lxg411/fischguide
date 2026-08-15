@@ -9,7 +9,8 @@ export async function getStaticPaths() {
 }
 
 const { guide } = Astro.props;
-const { Content } = await render(guide);
+const { Content, headings } = await render(guide);
+const toc = headings.filter((h) => h.depth === 2);
 const path = `/guides/${guide.id}/`;
 
 // 内链：列出其他攻略页（首页-内页、内页-内页密切内链）
@@ -53,27 +54,45 @@ const jsonLd = [
   path={path}
   jsonLd={jsonLd}
   image={guide.data.image}
+  withRail
 >
   <nav class="breadcrumb"><a href="/">Home</a> › <a href="/guides/">Guides</a></nav>
-  <article>
-    <h1>{guide.data.title}</h1>
-    <Content />
-  </article>
-
-  {
-    others.length > 0 && (
-      <aside>
-        <h2>Related Guides</h2>
-        <ul>
-          {others.map((g) => (
-            <li>
-              <a href={`/guides/${g.id}/`}>{g.data.title}</a>
-            </li>
-          ))}
-        </ul>
-      </aside>
-    )
-  }
+  <div class="guide-grid">
+    <article>
+      <h1>{guide.data.title}</h1>
+      <Content />
+    </article>
+    <div class="guide-rail">
+      {
+        toc.length > 1 && (
+          <nav class="toc rail-card" aria-label="On this page">
+            <h2>On This Page</h2>
+            <ul>
+              {toc.map((h) => (
+                <li>
+                  <a href={`#${h.slug}`}>{h.text}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )
+      }
+      {
+        others.length > 0 && (
+          <aside class="related rail-card">
+            <h2>Related Guides</h2>
+            <ul>
+              {others.map((g) => (
+                <li>
+                  <a href={`/guides/${g.id}/`}>{g.data.title}</a>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )
+      }
+    </div>
+  </div>
 </BaseLayout>
 
 <style>

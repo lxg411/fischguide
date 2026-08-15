@@ -74,3 +74,143 @@ h2,
 h3 {
   line-height: 1.25;
 }
+
+/* ===== 宽屏适配（2026-08-14 加：数据表页宽容器 + 攻略页桌面侧栏）===== */
+/* 数据表页型（tier list/values/图鉴表）：表格需要横向空间，容器放宽；
+   手机端 max-width 不生效，版式零变化 */
+.container.wide {
+  max-width: 1120px;
+}
+
+/* 攻略内页两栏：≥1024px 时 正文列+右侧栏（页内目录+相关页）；
+   窄屏自动塌成单列，侧栏目录隐藏（正文后目录在手机上无用） */
+.guide-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+.guide-rail {
+  min-width: 0;
+}
+.guide-rail .toc {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .container.with-rail {
+    max-width: 1120px;
+  }
+  .guide-grid {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    align-items: start;
+  }
+  .guide-grid > article {
+    max-width: 880px; /* 正文行长不变，可读性口径不动 */
+  }
+  .guide-rail {
+    position: sticky;
+    top: 5rem;
+  }
+  .guide-rail .toc {
+    display: block;
+  }
+}
+.guide-rail nav.toc ul,
+.guide-rail .related ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.guide-rail nav.toc li,
+.guide-rail .related li {
+  margin: 0.45rem 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.guide-rail .rail-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+}
+.guide-rail .rail-card h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* 宽页对齐修正（2026-08-14 用户抓出 hero/nav 880 vs 正文 1240 边线不齐）：
+   wide/withRail 页面上全部容器（Nav/hero 内层/main/Footer）统一 1240，一条左边线贯穿 */
+body.wide-page .container {
+  max-width: 1120px;
+}
+
+/* 首页密度区块（2026-08-14：分步/分类索引/事实卡横排/截图廊——模板级页型样式） */
+ol.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+ol.steps li {
+  counter-increment: step;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem 0.8rem 3.2rem;
+  position: relative;
+}
+ol.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.index-col h3 { margin-top: 0; }
+.index-col ul { list-style: none; padding: 0; margin: 0.6rem 0 0; }
+.index-col li { margin: 0.55rem 0; font-size: 0.93rem; line-height: 1.5; }
+.facts-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+.fact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.fact-card .fact-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.fact-card strong { font-size: 0.95rem; line-height: 1.3; }
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.shots figure { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.shots img { display: block; width: 100%; height: auto; }
+.shots figcaption { padding: 0.55rem 0.85rem; font-size: 0.85rem; color: var(--muted); }
