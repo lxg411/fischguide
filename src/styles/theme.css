@@ -45,7 +45,7 @@ img {
 }
 
 .container {
-  max-width: 860px;
+  max-width: 1120px; /* 2026-08-15 全站统一：翻页时 nav/正文/footer 左边线不动 */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -214,3 +214,11 @@ ol.steps li::before {
 .shots figure { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .shots img { display: block; width: 100%; height: auto; }
 .shots figcaption { padding: 0.55rem 0.85rem; font-size: 0.85rem; color: var(--muted); }
+
+/* 窄页正文限宽（2026-08-15 用户拍板）：容器已统一 1120 消除跨页跳宽，
+   但散文/2 列表页的正文不能跟着拉到 1120——行太长回扫丢行。
+   限回各站改前的宽度 860px，正文左对齐，左边线仍与 nav/footer 同在一条线上。
+   口径与攻略页正文列锁 880 一致：宽的是容器，不是行长。 */
+body:not(.wide-page) main.container > * {
+  max-width: 860px;
+}
