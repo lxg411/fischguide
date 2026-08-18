@@ -1,0 +1,39 @@
+---
+/**
+ * Quick Answer 直答块（2026-08-18 自 AnvilWiki 移植）：页首 2-3 句直接回答
+ * 本页搜索意图——AI Overviews / featured snippet 优先抽取"答案前置"的段落。
+ * 用法：codes 页自动生成（活码数+日期）；攻略页由 frontmatter summary 驱动。
+ */
+interface Props {
+  label?: string;
+}
+const { label = 'Quick Answer' } = Astro.props;
+---
+
+<aside class="quick-answer">
+  <p class="qa-label">{label}</p>
+  <p class="qa-text"><slot /></p>
+</aside>
+
+<style>
+  .quick-answer {
+    margin: 1rem 0 1.5rem;
+    padding: 0.85rem 1rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius);
+  }
+  .qa-label {
+    margin: 0 0 0.25rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-strong);
+  }
+  .qa-text {
+    margin: 0;
+    color: var(--text);
+  }
+</style>

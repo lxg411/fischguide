@@ -2,6 +2,10 @@
 /**
  * 兑换码表格：codes 页核心组件（AI Overviews 难以替代的实时维护型内容）。
  * 数据来源 src/data/codes.json，"last checked" 日期随每次构建自动更新。
+ *
+ * 活码=一键复制行（2026-08-18 自 AnvilWiki 移植：codes 页读者第一动作就是
+ * 复制→切游戏→粘贴，整行即点击目标 + Copied! 反馈是此页型最高留存 UI）；
+ * 过期码保留表格——"is XXX still working" 这类过期码查询是长尾流量，不删。
  */
 interface Code {
   code: string;
@@ -20,21 +24,19 @@ const lastChecked = new Date().toISOString().slice(0, 10);
 <p class="checked">Last checked: <strong>{lastChecked}</strong> — {active.length} active codes.</p>
 
 <h2>Active Codes</h2>
-<div class="card">
-  <table>
-    <thead><tr><th>Code</th><th>Reward</th></tr></thead>
-    <tbody>
-      {
-        active.map((c) => (
-          <tr>
-            <td><code>{c.code}</code></td>
-            <td>{c.reward}</td>
-          </tr>
-        ))
-      }
-    </tbody>
-  </table>
-</div>
+<ul class="code-list">
+  {
+    active.map((c) => (
+      <li>
+        <button type="button" class="code-row" data-code={c.code} aria-label={`Copy code ${c.code}`}>
+          <code class="code-pill">{c.code}</code>
+          <span class="code-reward">{c.reward}</span>
+          <span class="code-hint" data-hint>Tap to copy</span>
+        </button>
+      </li>
+    ))
+  }
+</ul>
 
 {
   expired.length > 0 && (
@@ -46,7 +48,7 @@ const lastChecked = new Date().toISOString().slice(0, 10);
             {expired.map((c) => (
               <tr>
                 <td>
-                  <code>{c.code}</code>
+                  <code class="strike">{c.code}</code>
                 </td>
                 <td>{c.reward}</td>
               </tr>
@@ -58,6 +60,48 @@ const lastChecked = new Date().toISOString().slice(0, 10);
   )
 }
 
+<script>
+  // 复制降级链：Clipboard API（https+用户手势）→ execCommand（老浏览器/WebView）
+  async function copyText(text: string): Promise<boolean> {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch {
+      /* 落到 execCommand */
+    }
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand('copy');
+      ta.remove();
+      return ok;
+    } catch {
+      return false;
+    }
+  }
+
+  document.querySelectorAll<HTMLElement>('.code-row').forEach((row) => {
+    row.addEventListener('click', async () => {
+      const code = row.getAttribute('data-code') ?? '';
+      const hint = row.querySelector<HTMLElement>('[data-hint]');
+      const ok = await copyText(code);
+      // 两条路径都失败（极老环境）不误报 Copied!，码本身仍可见可手抄
+      if (ok && hint) {
+        hint.textContent = 'Copied!';
+        hint.classList.add('copied');
+        setTimeout(() => {
+          hint.textContent = 'Tap to copy';
+          hint.classList.remove('copied');
+        }, 1500);
+      }
+    });
+  });
+</script>
+
 <style>
   .checked {
     color: var(--muted);
@@ -65,10 +109,63 @@ const lastChecked = new Date().toISOString().slice(0, 10);
   .muted {
     opacity: 0.7;
   }
-  code {
+  .code-list {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .code-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+  .code-row:hover {
+    border-color: var(--primary);
+  }
+  .code-pill {
+    flex-shrink: 0;
+    background: var(--bg);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .code-reward {
+    flex: 1;
+    min-width: 0;
+    color: var(--muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .code-hint {
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .code-hint.copied {
+    color: var(--primary-strong);
+    font-weight: 600;
+  }
+  code.strike {
     background: var(--bg);
     padding: 0.1rem 0.4rem;
     border-radius: 4px;
     border: 1px solid var(--border);
+    text-decoration: line-through;
+    opacity: 0.8;
   }
 </style>

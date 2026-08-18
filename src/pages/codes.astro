@@ -1,11 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import QuickAnswer from '../components/QuickAnswer.astro';
 import CodesTable from '../components/CodesTable.astro';
 import FaqSection from '../components/FaqSection.astro';
 import { SITE } from '../config/site';
 import codes from '../data/codes.json';
 
 const month = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+const activeCount = (codes as { status: string }[]).filter((c) => c.status === 'active').length;
+const qaToday = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+// 整句拼好再插值（Astro 折叠表达式间空格，拼句易粘连）
+const quickAnswer = `As of ${qaToday}, there ${activeCount === 1 ? 'is' : 'are'} ${activeCount} active ${SITE.gameName} ${activeCount === 1 ? 'code' : 'codes'}. Tap any code below to copy it, then redeem it in-game for free rewards.`;
 const title = `${SITE.gameName} Codes (${month})`;
 
 const faqs = [
@@ -26,6 +31,7 @@ const faqs = [
   path="/codes/"
 >
   <h1>{title}</h1>
+  <QuickAnswer>{quickAnswer}</QuickAnswer>
   <p>
     Working {SITE.gameName} codes, verified by hand. Bookmark this page — new codes are added as
     soon as they drop.
